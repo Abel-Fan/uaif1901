@@ -76,7 +76,7 @@ abcdef  注释
 '''
 
 # 切片
-a = "山西优逸客科技有限公司"
+# a = "山西优逸客科技有限公司"
 # 切片功能
 # print(a[2:5])
 # 语法
@@ -86,4 +86,46 @@ a = "山西优逸客科技有限公司"
 # end == 结尾(前结尾、后结尾)
 # 步进值  == 1 如果为-1改变方向
 # print(a[::-1])
-print(dir(a))
+# print(dir(a))
+
+# 列表
+arr = [[1,2],[3,4]]
+# 访问列表
+# print(arr[-1])
+# 获取列表长度
+# print(len(arr))
+# 深拷贝浅拷贝
+# arr1 = arr  #传址
+
+# print(id(arr1),id(arr))
+# arr1[0] = 'a'
+# print(arr1)
+# print(arr)
+# import copy
+# arr1 = copy.deepcopy(arr) # 浅拷贝
+# arr1[0][0] = 'a'
+# print("arr1",id(arr1),arr1)
+# print("arr",id(arr),arr)
+# arr1 = arr.copy()  # 浅拷贝
+
+# 遍历
+# 1
+# for item in arr:
+#     print(arr.index(item),item)
+# 2
+# range()
+# 1个参数：结束的值。返回 包含0 - n之前的数的序列
+# print(list(range(10)))
+# 2个参数：开始的位置，结束的位置。返回包含开始-结束 之间的数的序列
+# print(list(range(5,10)))
+# 3个参数：开始，结束，步进值
+
+# for i in range(len(arr)):
+#     print(i,arr[i])
+
+# 3
+# enumerate() 返回列表元素
+# print(list(enumerate(arr))
+# for i,v in enumerate(arr):
+#     print(i,v)
+# a,b,c,d,e = (1,2,3,4,5)
