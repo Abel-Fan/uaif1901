@@ -89,7 +89,7 @@ abcdef  注释
 # print(dir(a))
 
 # 列表
-arr = [[1,2],[3,4]]
+# arr = [[1,2],[3,4]]
 # 访问列表
 # print(arr[-1])
 # 获取列表长度
@@ -129,3 +129,78 @@ arr = [[1,2],[3,4]]
 # for i,v in enumerate(arr):
 #     print(i,v)
 # a,b,c,d,e = (1,2,3,4,5)
+
+# 列表推导式推导式
+# 快速生成新的列表
+# 推导式
+# 列表推导式、字典推导式、集合推导式
+
+#列表推导式
+# arr = [1,2,3,4,5]
+# 语法：
+# 1 每个元素幂运算
+# arr2 = [ item*item for item in arr ]
+# print(arr2)
+# 2 输出偶数 ,并且幂运算
+# arr2 = [ item*item for item in arr if item%2==0 ]
+# print(arr2)
+
+
+# 元组
+# 定义：不可改变的列表
+# 语法：
+# t1 = ()
+# print(type(t1))
+# t2 = (1,)
+# print(type(t2))
+# 面试题
+# t1=([1,2],[3,4])
+# t1[0][0] = 2
+# print(t1)
+
+# 字典 （对象，json）
+# 语法
+# （1）json方式
+# dict1 = {1:123,'name':'horns',(1,2,3):'abc'}
+# 访问
+# print(dict1[1])
+# print(dict1['name'])
+# print(dict1[(1,2,3)])
+#字典的键需要进行hash运算，只要键能进行hash（哈希）运算就可以设置，可变数据类型不可以哈希运算
+# 通过dict()内建函数创建
+# （2）dict2 = dict() # 创建了空的字典
+# 设置键值
+# dict2[1] = 123
+# dict2['name'] = 'horns'
+# dict2[(1,2,3)] = 'abc'
+# print(dict2)
+
+# 批量创建键值
+dict3 = dict.fromkeys([1,2,3,4,5],'a')
+# print(dict3)
+
+# 删除字典的数据以及字典  del
+# del dict3[2]
+# print(dict3)
+# del dict3
+# print(dict3)
+
+# 遍历字典
+# 1
+# for k in dict3:
+#     print(k)
+#     print(dict3[k])
+
+# 2
+# print(dict3.items())
+# for k,v in dict3.items():
+#     print(k,v)
+
+# 3
+# arr = zip([1,2,3,4],['a','b','c','d'],[11,22,33,44])  # 将传入的列表一一对应
+# print(list(arr))
+# dict3.keys() # 返回键
+# dict3.values() # 返回值
+#
+# for k,v in zip(dict3.keys(),dict3.values()):
+#     print(k,v)
