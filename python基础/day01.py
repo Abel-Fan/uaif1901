@@ -176,7 +176,7 @@ abcdef  注释
 # print(dict2)
 
 # 批量创建键值
-dict3 = dict.fromkeys([1,2,3,4,5],'a')
+# dict3 = dict.fromkeys([1,2,3,4,5],'a')
 # print(dict3)
 
 # 删除字典的数据以及字典  del
@@ -204,3 +204,47 @@ dict3 = dict.fromkeys([1,2,3,4,5],'a')
 #
 # for k,v in zip(dict3.keys(),dict3.values()):
 #     print(k,v)
+d = {'a':1,'A':10,'b':2,'B':20}
+# 字典推导式
+# 1
+# d2 = { k:str(v)+'m' for k,v in d.items() }
+# print(d2)
+# 2
+# d3 = { k:str(v + d[k.upper()])+'px' for k,v in d.items() if k.islower()}
+# # print(d3)
+
+# 其他内建函数
+# d.get()
+# d.pop()
+# d.clear()
+# d.setdefault()
+# in & not in
+# d.update({'c':3,'C':30})
+# d.setdefault('d',"333")
+# print(d)
+
+#集合
+s1 = {1,2,3,4,5,6}
+# s2 = {4,5,6,7,8,9}
+# # 集合操作
+# # 交集
+# print(s1&s2)
+# # 并集
+# print(s1|s2)
+# # 差集
+# print(s1^s2)
+
+# 集合推导式
+# 1
+# s2 = { item+1 for item in s1}
+# print(s2)
+# 2
+# s2 = {item for item in s1 if item%2==0}
+# print(s2)
+# 通过集合元素没有重复这一特点进行列表的去重
+# arr1 = [1,1,2,2,3,4,2,2,5,9,8,6,8,4,3]
+# print(list(set(arr1)))
+
+# arr1.sort(reverse=True)
+# arr1.reverse()
+# print(arr1)
