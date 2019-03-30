@@ -251,3 +251,73 @@ def 函数名(形参):
 # def fn():
 #     return 1,2,3
 # print(fn())  # 返回值不可以是多个，如果有多个返回值默认为是元组
+
+# 高阶函数
+# 分类：实参高阶函数、返回值高阶函数
+# 一、普通写法
+# 加法运算
+# def fn(a,b,c):
+#     return sum([a,b,c])
+#
+# print(fn(1,2,3))
+
+# 二、柯里化写法
+# def fn(a):
+#     def fn1(b):
+#         def fn2(c):
+#             return a+b+c
+#         return fn2
+#     return fn1
+#
+# print(fn(10)(20)(30))
+
+# 匿名函数 lambda
+
+# 一、语法
+# lambda 参数1,参数2,..:函数体
+
+#调用
+# （1）高阶函数中作为参数
+# def fn1(a):
+#     return lambda b: lambda c:a+b+c
+# print(fn1(10)(20)(30))
+
+# （2）自调用
+# print((lambda a,b:a+b)(10,20))
+
+# （3）赋值
+# fn = lambda a,b:a+b
+# print(fn(10,20))
+
+# 作用域、全局变量、局部变量
+# global 全局 nonlocal 不是局部
+# a = 123
+# def fn():
+#     # global a = 456 # SyntaxError
+#     global a
+#     a=456
+#     print(a)
+#
+# fn()
+# print(a)
+# a = 123
+# def fn1():
+#     a = 456
+#     def fn2():
+#         nonlocal a
+#         a = 789
+#         print(a)
+#     fn2()
+#     print(a)
+#
+# fn1()
+# print(a)
+
+# 闭包函数
+"""
+在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。
+"""
+# 递归函数
+"""
+如果一个函数在内部不调用其它的函数，而是自己本身的话，这个函数就是递归函数。
+"""
