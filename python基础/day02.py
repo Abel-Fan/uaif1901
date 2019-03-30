@@ -120,3 +120,134 @@
 # 三元运算符
 # a,b = 10,20
 # print("a>b") if a>b else print("b>a")
+
+# 流程控制
+# 一、分支
+# if
+# a,b=10,20
+#
+# if a>b:
+#     print("a>b")
+# elif a==b:
+#     print("a==b")
+# else:
+#     pass
+
+# pass 占位
+"""
+if(a>b){
+    
+}
+"""
+# 二、循环
+# (1) for
+# range()序列
+# for i in range(1,11):
+#     print(i)
+
+# (2) while
+# a1,b1=10,20
+# while a1<b1:
+#     print(a1)
+#     a1+=1
+# for 与 while区别
+# 是否明确循环次数
+# (3)干预循环
+# break continue
+
+# 猜数字
+# import random
+# 作业：random 常用方法
+# num1 = random.randint(1,100)
+
+# while True:
+#     num2 = int(input("请输入一个0~100之间的数：\n"))
+#     if num2>num1:
+#         print("数字过大")
+#     elif num2==num1:
+#         print("恭喜你猜对了")
+#         break
+#     else:
+#         print("数字过小")
+
+# 九九乘法表
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         print("%s*%s=%s"%(j,i,j*i),end=" ")
+#     print("")
+
+# 列表推导式
+
+# print("\n".join( [ "".join([ '%s*%s=%s '%(j,i,j*i) for j in range(1,i+1)]) for i in range(1,10)]))
+
+# 列表转字符串
+# arr2 = ['1','2','3','4']
+# print(",".join(arr2))
+
+
+# 函数
+# 一、语法
+"""
+def 函数名(形参):
+    函数体
+    return [value]
+"""
+# 二、调用
+# 函数名(实参)
+
+# 三、参数形式
+# （1）必选参数
+# def fn(name):
+#     print(name)
+# fn()   # TypeError
+
+# (2) 缺省参数(默认参数)
+# def fn(name,sex='男'):
+#     print(name,sex)
+#
+# fn('horns')
+# 必选参数与默认参数的顺序不可调整
+# def fn(sex='男',name):  # SyntaxError
+#     print(name,sex)
+#
+# fn('horns')
+
+# （3）可变参数
+# def fn(name,sex='男',*cj):
+#     print(name,sex,cj,type(cj))
+#
+# fn('horns','男',12,34,45)
+
+# (4) 关键字参数
+# def fn(name,sex='男',*cj,**attr):
+#     print(name,sex,cj,attr)
+#
+# fn('horns','男',12,14,34,56,height=180,weight=140)
+
+# 顺序 : 必选参数 、默认参数（缺省参数）、可变参数、关键字参数
+# 特殊用法：万能参数
+# def fn(*args,**kwargs):
+#     print(args,kwargs)
+#
+# fn(12,3213,41324,name='asdf',age='18')
+
+# 解构用法
+# def fn(a,b,c,d):
+#     print(a,b,c,d)
+#
+# arr = [1,2,3,4]
+# fn(*arr)
+
+# def fn(name,age,sex):
+#     print(name,age,sex)
+#
+# dict1 = {'name':'horns','age':'18','sex':'男'}
+
+# fn(**dict1)
+# fn(name='horns',sex='男',age='18') # 使用键值形式可以不遵循顺序
+
+# 二、return
+
+# def fn():
+#     return 1,2,3
+# print(fn())  # 返回值不可以是多个，如果有多个返回值默认为是元组
