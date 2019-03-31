@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
+    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="6">
+      <change afterPath="$PROJECT_DIR$/python基础/day03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python基础/day02.py" beforeDir="false" afterPath="$PROJECT_DIR$/python基础/day02.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,26 +25,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="py" value="7" />
+          <entry key="py" value="8" />
+          <entry key="pyi" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="8" />
+          <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="12" />
-          <entry key="py" value="8504" />
-          <entry key="txt" value="4" />
+          <entry key="py" value="11047" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="8504" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="Python" value="11047" />
         </counts>
       </usages-collector>
     </session>
@@ -52,24 +54,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python基础/day02.py">
+        <entry file="file://$PROJECT_DIR$/python基础/day03.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="321" column="38" selection-start-line="321" selection-start-column="38" selection-end-line="321" selection-end-column="38" />
+            <state relative-caret-position="198">
+              <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
               <folding>
-                <marker date="1553938578910" expanded="true" signature="2384:2519" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="2557:2564" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="2668:2675" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="2826:2833" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="2921:2928" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="2998:3005" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="3166:3173" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="3288:3295" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="3377:3447" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="3377:3454" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="3399:3437" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="3571:3892" ph="..." />
-                <marker date="1553938578910" expanded="true" signature="3928:3935" ph="..." />
+                <marker date="1554003279877" expanded="true" signature="423:445" ph="..." />
+                <marker date="1554003279877" expanded="true" signature="821:1107" ph="..." />
+                <marker date="1554003279877" expanded="true" signature="842:1092" ph="..." />
+                <marker date="1554003279877" expanded="true" signature="1350:1779" ph="..." />
+                <marker date="1554003279877" expanded="true" signature="1370:1502" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,11 +81,12 @@
         <option value="$PROJECT_DIR$/python基础/day01.py" />
         <option value="$PROJECT_DIR$/../demo.py" />
         <option value="$PROJECT_DIR$/python基础/day02.py" />
+        <option value="$PROJECT_DIR$/python基础/day03.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="640" />
+    <option name="x" value="418" />
     <option name="y" value="160" />
     <option name="width" value="1512" />
     <option name="height" value="870" />
@@ -121,6 +116,9 @@
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -168,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day02">
+  <component name="RunManager" selected="Python.day03">
     <configuration name="day01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,6 +209,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="day03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python基础" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python基础/day03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -236,9 +255,11 @@
       <item itemvalue="Python.day01" />
       <item itemvalue="Python.demo" />
       <item itemvalue="Python.day02" />
+      <item itemvalue="Python.day03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day03" />
         <item itemvalue="Python.day02" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python.day01" />
@@ -277,14 +298,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553931576473</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="6">
+      <created>1553938689900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553938689900</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22557585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19221604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -296,7 +324,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -310,7 +338,8 @@
     <MESSAGE value="3" />
     <MESSAGE value="4" />
     <MESSAGE value="5" />
-    <option name="LAST_COMMIT_MESSAGE" value="5" />
+    <MESSAGE value="6" />
+    <option name="LAST_COMMIT_MESSAGE" value="6" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -343,7 +372,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python基础/day02.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="7704">
           <caret line="321" column="38" selection-start-line="321" selection-start-column="38" selection-end-line="321" selection-end-column="38" />
           <folding>
             <marker date="1553938578910" expanded="true" signature="2384:2519" ph="..." />
@@ -359,6 +388,27 @@
             <marker date="1553938578910" expanded="true" signature="3399:3437" ph="..." />
             <marker date="1553938578910" expanded="true" signature="3571:3892" ph="..." />
             <marker date="1553938578910" expanded="true" signature="3928:3935" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python基础/day03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+          <folding>
+            <marker date="1554003279877" expanded="true" signature="423:445" ph="..." />
+            <marker date="1554003279877" expanded="true" signature="821:1107" ph="..." />
+            <marker date="1554003279877" expanded="true" signature="842:1092" ph="..." />
+            <marker date="1554003279877" expanded="true" signature="1350:1779" ph="..." />
+            <marker date="1554003279877" expanded="true" signature="1370:1502" ph="..." />
           </folding>
         </state>
       </provider>
