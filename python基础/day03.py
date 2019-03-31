@@ -178,3 +178,62 @@ class 类名(基类、父类):
 #
 # c1 = Clock(14,41,20)
 # c1.run()
+
+
+# 烤地瓜
+### 1、分析属性和方法
+###### （1）示例属性
+'''
+cookedLevel:这是数字；0~3表示还是生的，超过3表示半生不熟，超过5表示已经烤好了，超过8表示烤成木炭了！地瓜开始时是生的
+cookedString:这是字符串；描述地瓜的生熟程度
+condiments:这是地瓜的配料表，比如番茄酱、芥末酱
+'''
+###### （2）示例方法
+'''
+cook()把地瓜烤一段时间
+addCondiments()给地瓜添加配料
+__init__()设置默认属性
+__str__()让print的结果看起来更好一些
+'''
+
+# class KaoDG:
+#     def __init__(self):
+#         self.cookedLevel = 0 #
+#         self.cookedString = '生的'  # 半生不熟   熟    烤焦
+#         self.condimentsList = ['番茄酱','芥末酱','甘梅']  # 番茄酱 芥末酱 甘梅
+#         self.condiments = self.condimentsList[0]
+#     def cook(self,min):
+#         self.cookedLevel+=min
+#         if self.cookedLevel>3 and self.cookedLevel<=5:
+#             self.cookedString = "半生不熟的"
+#         elif self.cookedLevel>5 and self.cookedLevel<=8:
+#             self.cookedString = "熟的"
+#         elif self.cookedLevel>8:
+#             self.cookedString = "烤焦的"
+#     def addCondiments(self,num):
+#         self.condiments = self.condimentsList[num]
+#
+#     def __str__(self):
+#         return '你好，这是你的%s口味的%s地瓜'%(self.condiments,self.cookedString)
+#
+#
+# obj1 = KaoDG()
+# obj2 = KaoDG()
+#
+# obj3 = KaoDG()
+# obj4 = KaoDG()
+#
+# obj1.cook(3)
+# obj2.cook(4)
+# obj3.cook(5)
+# obj4.cook(10)
+#
+# obj1.addCondiments(1)
+# obj2.addCondiments(2)
+# obj3.addCondiments(0)
+# obj4.addCondiments(1)
+#
+# print(obj1)
+# print(obj2)
+# print(obj3)
+# print(obj4)
