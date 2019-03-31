@@ -237,3 +237,107 @@ __str__()让print的结果看起来更好一些
 # print(obj2)
 # print(obj3)
 # print(obj4)
+"""
+(1)人类 
+    属性: 姓名 血量 持有的枪 
+    方法: 安子弹 安弹夹 拿枪（持有抢） 开枪
+(2)子弹类 
+    属性: 杀伤力 
+    方法: 伤害敌人(让敌人掉血)
+(3)弹夹类 
+    属性: 容量（子弹存储的最大值） 当前保存的子弹 
+    方法: 保存子弹（安装子弹的时候） 弹出子弹（开枪的时候）
+(4)枪类 
+    属性: 弹夹（默认没有弹夹，需要安装） 
+    方法: 连接弹夹（保存弹夹） 射子弹
+"""
+class P:
+    def __init__(self,name):
+        self.name = name
+        self.blood = 100
+        self.qobj = ""  # 枪
+    def aZ(self):  # 安子弹
+        pass
+    def aD(self,obj):  # 按弹夹
+        pass
+    def nQ(self,obj):  # 拿枪
+        self.qobj = obj
+
+    def kQ(self,obj):  #开枪
+        if obj.blood>=0:
+            self.qobj.remove(obj)
+            return "no"
+        else:
+            print("%s死了"%obj.name)
+            return "ok"
+    def __str__(self):
+        return """
+        姓名:%s
+        血量:%s
+        弹夹容量：%s
+        子弹剩余：%s
+        """%(self.name,self.blood,self.qobj.dj.sum,
+             len(self.qobj.dj.zdlist)
+             )
+
+class Z:
+    def __init__(self,num):
+        self.hurt = num
+    def kill(self,obj):   # 射击 开枪
+        if obj.blood>0:
+            obj.blood-=self.hurt
+        else:
+            print("%s死了"%obj.name)
+
+
+class D:
+    def __init__(self,num):
+        self.sum = num
+        self.zdlist = []
+    def addzj(self,zj): # 装子弹
+        if len(self.zdlist)< self.sum:
+            self.zdlist.append(zj)
+    def pop(self,obj): # 弹出子弹 开枪
+        if len(self.zdlist)>0:
+            self.zdlist[-1].kill(obj)
+            self.zdlist.pop()
+
+class Q:
+    def __init__(self):
+        self.dj = ""
+    def adddj(self,dj):  # 按弹夹
+        self.dj = dj
+    def remove(self,obj):  # 弹出子弹 开枪
+        self.dj.pop(obj)
+
+
+import random
+
+zds = [ Z(random.randint(10,20)) for i in range(100)]  # 地图上的子弹
+djs = [ D(random.randint(5,10)) for _ in range(10)]  # 地图上的弹夹
+qs = [ Q() for _ in range(5)]
+
+laowang = P('老王')
+laoli = P("老李")
+
+laowang.nQ(random.choice(qs))  # 捡枪
+laowang.qobj.adddj(random.choice(djs)) # 捡弹夹
+for i in range(10):
+    laowang.qobj.dj.addzj(random.choice(zds))  # 装了一颗
+
+laoli.nQ(random.choice(qs))  # 捡枪
+laoli.qobj.adddj(random.choice(djs)) # 捡弹夹
+for i in range(10):
+    laoli.qobj.dj.addzj(random.choice(zds))  # 装了一颗
+
+
+for i in range(10):
+    status1 = laowang.kQ(laoli)
+    status2 = laoli.kQ(laowang)
+    if status1=='ok' or status2=='ok':
+        break
+
+
+
+print(laowang)
+print(laoli)
