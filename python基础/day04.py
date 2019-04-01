@@ -70,3 +70,87 @@
 # p = P('小红',19)
 # print(dir(p))
 # print(p.name)
+
+# 继承与多重继承
+#
+# class Y:
+#     def __init__(self):
+#         self.gj = "石头"
+#     def run(self):
+#         print("直立行走")
+#
+# class P(Y):
+#     def __init__(self):
+#         super().__init__()
+#         # super()用来引用父类而不必显式地指定它们的名称
+#         self.yf = ""
+#     def say(self):
+#         print("沟通交流")
+#
+# p1 = P()
+#
+# print(dir(p1))
+# print(p1.gj)
+
+# 继承 调用 从左至右查找方法.
+
+# class Car:
+#     def __init__(self):
+#         self.pp = ""
+#         self.color = ""
+#     def run(self):
+#         print("启动")
+#
+# class ft:
+#     def __init__(self):
+#         self.type = ""
+#     def run1(self):
+#         print("丰田启动")
+#
+#
+# class hg(ft,Car):
+#     def __init__(self):
+#         super(hg, self).__init__()
+#         self.price = ""
+#
+# hg1 = hg()
+# print(dir(hg1))
+# hg1.run()
+
+# 深度优先
+# class A:
+#     def __init__(self):
+#         pass
+#     def run(self):
+#         print("A")
+#
+#
+# class B:
+#     def __init__(self):
+#         pass
+#     def run(self):
+#         print("B")
+#
+#
+# class C(A):
+#     def __init__(self):
+#         pass
+#     def say(self):
+#         print("C")
+#
+# class D(B):
+#     def __init__(self):
+#         pass
+#     def say(self):
+#         print("D")
+#     def run(self):
+#         print("D->run")
+#
+# class F(C,D):
+#     def __init__(self):
+#         pass
+#
+#
+# f = F()
+# # f.say()
+# f.run()  #
