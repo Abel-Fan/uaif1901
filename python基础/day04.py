@@ -154,3 +154,87 @@
 # f = F()
 # # f.say()
 # f.run()  #
+
+
+#魔法方法
+
+# （1）__slots__ 限制属性和方法
+#
+# class P:
+#     """
+#     Peron类  人类
+#     """
+#     def __int__(self):
+#         pass
+#     __slots__ = ['name','sex']
+#     __name__ = "Person"
+#     def run(self):
+#         print(self.__doc__)
+#
+#
+# p = P()
+# p.name = 'horns'
+# p.sex = '男'
+# print(dir(p))
+# print(p.__doc__)
+#
+# def fn():
+#     """
+#     this is fn
+#     :return:
+#     """
+#     pass
+#
+#
+# print(fn.__doc__)
+
+#
+# class Car:
+#     def __init__(self):
+#         self.color = ""
+#
+# class BWM(Car):
+#     def __new__(cls, *args, **kwargs): # 创建实例，必须有返回值
+#         print("new")
+#         return super().__new__(cls)
+#     def __init__(self):
+#         print("init")
+#         self.pingpai = ''
+#     def __del__(self):
+#         print("del")
+#
+# b = BWM()
+# # del b
+# del b
+# print(b)
+#
+# # __new__ 与 __init__ 关系
+
+import time
+
+def sumtime(fn):
+    def newFn(self,*args,**kwargs):
+        start = time.time()
+        fn(self,*args,**kwargs)
+        end = time.time()
+        print("%s你好帅"%self.name)
+        print("总时间:%s"%(end-start))
+    return newFn
+
+# 类装饰器
+class P:
+    def __init__(self,name):
+        self.name= name
+    @sumtime
+    def run(self):
+        time.sleep(1)
+        print(self.name)
+
+# 实例方法装饰器
+
+
+p = P("horns")
+p.run()
+
+
+
