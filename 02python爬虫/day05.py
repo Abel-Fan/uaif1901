@@ -112,7 +112,6 @@ for item in obj:
 
 
 
-
 # with urlopen(url) as html:
 #     text = html.read().decode('utf8')
 #
