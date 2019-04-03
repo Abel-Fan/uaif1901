@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="15">
-      <change afterPath="$PROJECT_DIR$/02python爬虫/day06.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02python爬虫/day05.py" beforeDir="false" afterPath="$PROJECT_DIR$/02python爬虫/day05.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python基础/day01.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/day01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python基础/day02.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/day02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python基础/day03.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/day03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python基础/day04.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/day04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02python爬虫/day06.py" beforeDir="false" afterPath="$PROJECT_DIR$/02python爬虫/day06.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +27,7 @@
           <entry key="jpg" value="7" />
           <entry key="m4a" value="1" />
           <entry key="mp3" value="2" />
-          <entry key="py" value="17" />
+          <entry key="py" value="19" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="7" />
         </counts>
@@ -42,7 +36,7 @@
         <counts>
           <entry key="Image" value="7" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="17" />
+          <entry key="Python" value="19" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
@@ -50,25 +44,25 @@
         <counts>
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="91" />
-          <entry key="py" value="29952" />
+          <entry key="py" value="30810" />
           <entry key="txt" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="153" />
-          <entry key="Python" value="29952" />
+          <entry key="Python" value="30810" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02python爬虫/day05.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1712">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            <state relative-caret-position="-570">
+              <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
               <folding>
                 <marker date="1554199121110" expanded="true" signature="2068:2170" ph="..." />
               </folding>
@@ -77,22 +71,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02python爬虫/day06.py">
+        <entry file="file://$PROJECT_DIR$/../demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+            <state relative-caret-position="294">
+              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
               <folding>
-                <element signature="e#9#37#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02python爬虫/day06.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="30">
+              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+              <folding>
+                <element signature="e#9#37#0" expanded="true" />
+                <marker date="1554272462044" expanded="true" signature="1242:1582" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,15 +108,16 @@
         <option value="$PROJECT_DIR$/python基础/day03.py" />
         <option value="$PROJECT_DIR$/python基础/day04.txt" />
         <option value="$PROJECT_DIR$/python基础/day04.py" />
-        <option value="$PROJECT_DIR$/../demo.py" />
         <option value="$PROJECT_DIR$/02python爬虫/day05.py" />
-        <option value="$PROJECT_DIR$/02python爬虫/day06.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/../demo.py" />
+        <option value="$PROJECT_DIR$/02python爬虫/day06.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="484" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="376" />
+    <option name="y" value="85" />
     <option name="width" value="1512" />
     <option name="height" value="870" />
   </component>
@@ -163,17 +162,6 @@
             <path>
               <item name="aa" type="b2602c69:ProjectViewProjectNode" />
               <item name="aa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aa" type="462c0819:PsiDirectoryNode" />
-              <item name="02python爬虫" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aa" type="462c0819:PsiDirectoryNode" />
-              <item name="02python爬虫" type="462c0819:PsiDirectoryNode" />
-              <item name="songs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,8 +307,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.day06" />
-        <item itemvalue="Python.day05" />
         <item itemvalue="Python.demo" />
+        <item itemvalue="Python.day05" />
         <item itemvalue="Python.day04" />
         <item itemvalue="Python.day03" />
       </list>
@@ -458,12 +446,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16441621" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19618745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.669627" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.58792186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,13 +557,6 @@
     <entry file="file://$PROJECT_DIR$/01python基础/day04.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4320">
@@ -617,16 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/day06.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="e#9#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -636,10 +607,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02python爬虫/day05.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1712">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        <state relative-caret-position="-570">
+          <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
           <folding>
             <marker date="1554199121110" expanded="true" signature="2068:2170" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02python爬虫/day06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding>
+            <element signature="e#9#37#0" expanded="true" />
+            <marker date="1554272462044" expanded="true" signature="1242:1582" ph="..." />
           </folding>
         </state>
       </provider>

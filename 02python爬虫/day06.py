@@ -20,28 +20,49 @@ import time
 #     urlcleanup()
 
 # 二、爬取音乐
-ua = UserAgent()
-headers = {
-    'User-Agent': ua.random
-}
-URL = "https://music.163.com/artist?id=3684"
+# ua = UserAgent()
+# headers = {
+#     'User-Agent': ua.random
+# }
+# URL = "https://music.163.com/artist?id=3684"
+#
+# URL2 = 'http://music.163.com/song/media/outer/url?id='
+# res = Request(URL,headers=headers)
+#
+# with urlopen(res) as html:
+#     text = html.read().decode('utf-8')
+#
+# doc = etree.HTML(text)
+# links = doc.xpath("//ul[@class='f-hide']/li/a/@href")
+# songs = doc.xpath("//ul[@class='f-hide']/li/a/text()")
+#
+# ids = [ link[9::] for link in links]
+#
+#
+# for sid,title in zip(ids,songs):
+#     time.sleep(1)
+#     req2 = Request(URL2 + str(sid),headers=headers)
+#     with urlopen(req2) as html:
+#         urlretrieve(html.geturl(),"songs/%s.mp3"%title)
+#         print("songs/%s.mp3 下载完成"%title)
 
-URL2 = 'http://music.163.com/song/media/outer/url?id='
-res = Request(URL,headers=headers)
-
-with urlopen(res) as html:
-    text = html.read().decode('utf-8')
-
-doc = etree.HTML(text)
-links = doc.xpath("//ul[@class='f-hide']/li/a/@href")
-songs = doc.xpath("//ul[@class='f-hide']/li/a/text()")
-
-ids = [ link[9::] for link in links]
-
-
-for sid,title in zip(ids,songs):
-    time.sleep(1)
-    req2 = Request(URL2 + str(sid),headers=headers)
-    with urlopen(req2) as html:
-        urlretrieve(html.geturl(),"songs/%s.mp3"%title)
-        print("songs/%s.mp3 下载完成"%title)
+# 单例模式
+#
+# class Foo(object):
+#     __obj = None
+#     def __new__(cls, *args, **kwargs):
+#         if not cls.__obj:
+#             cls.__obj = super().__new__(cls)
+#             return cls.__obj
+#         else:
+#             return cls.__obj
+#
+#     def __init__(self,name):
+#         self.name = name
+#     def say(self):
+#         print(self.name)
+#
+# a = Foo("horns")
+# b = Foo('xm')
+# a.say()
+# b.say()
