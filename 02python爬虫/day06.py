@@ -95,6 +95,7 @@ import time
 # 爬取豆瓣
 
 from urllib.request import *
+import requests
 import pickle,fake_useragent
 from lxml.etree import *
 
@@ -110,10 +111,14 @@ header = {
     'User-Agent':ua.random
 }
 def spider(url):
-    req = Request(url,headers=header)
-    with urlopen(req) as html:
-        text = html.read().decode()
-    doc = HTML(text)
+    # req = Request(url,headers=header)
+    # with urlopen(req) as html:
+    #     text = html.read().decode()
+    res = requests.get(url,headers=header,proxies={
+        'http':'http://39.108.168.155:8118',
+        'https': 'https://39.108.168.155:8118',
+    })
+    doc = HTML(res.text)
     # 导演
     pl1 = "/".join(doc.xpath("//div[@id='info']/span[1]/span[@class='attrs']/a[1]/text()"))
     # 编剧
@@ -130,12 +135,13 @@ def spider(url):
         'edit':pl2,
         'actor':pl3,
         'type':pl4,
-        'dis':pl5
+        # 'dis':pl5
     }
 
 
 data = []
 for url in lists:
+    # print(url)
     res = spider(url)
     print(res)
 

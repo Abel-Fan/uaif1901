@@ -16,10 +16,10 @@
 #     obj = json.loads(text)
 #     print(obj)
 
-import requests
-from fake_useragent import UserAgent
-from lxml.etree import HTML
-import time,pickle
+# import requests
+# from fake_useragent import UserAgent
+# from lxml.etree import HTML
+# import time,pickle
 #
 # res = requests.get(url)
 # print(res.text)
@@ -91,7 +91,7 @@ ua = UserAgent()
 # session = requests.session()  # session对象
 # res0 = session.post(login,data=data)
 #
-login = "http://118.190.150.35:9000/login"
+# login = "http://118.190.150.35:9000/login"
 #
 # res = session.get(login)
 #
@@ -101,33 +101,33 @@ login = "http://118.190.150.35:9000/login"
 #
 # print(res.text)
 # print(res.url)
-# print(res.status_code)
-
-
-URL = "http://118.190.150.35:9000/uektrain/daily/uekDailyStudent/updatecontent"
-login = "http://118.190.150.35:9000/login"
-ribao = {
-    'uekDailyStudentDO.id':'24749561da5844b0b59896f43372e068', # 学生id
-    'uekDailyStudentDO.motto':'好好学习天天向上', # 座右铭
-    'uekDailyStudentContentDO[0].workContent': "爬虫", #工作内容
-    'uekDailyStudentContentDO[0].completeness':'100', #完成情况
-    'uekDailyStudentContentDO[0].poblem':'无', # 问题
-    'uekDailyStudentDO.mood':'好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上'# 工作内容
-}
-header = {
-    'User-Agent':ua.random
-}
-data = {
-    'username':'15835007400',
-    'password':'111111'
-}
-
-sess = requests.session()
-sess.post(login,data=data)
-res = sess.post(URL,data=ribao)
-print(res.text)
-# print(res.status_code)
-
+# # print(res.status_code)
+#
+#
+# URL = "http://118.190.150.35:9000/uektrain/daily/uekDailyStudent/updatecontent"
+# login = "http://118.190.150.35:9000/login"
+# ribao = {
+#     'uekDailyStudentDO.id':'24749561da5844b0b59896f43372e068', # 学生id
+#     'uekDailyStudentDO.motto':'好好学习天天向上', # 座右铭
+#     'uekDailyStudentContentDO[0].workContent': "爬虫", #工作内容
+#     'uekDailyStudentContentDO[0].completeness':'100', #完成情况
+#     'uekDailyStudentContentDO[0].poblem':'无', # 问题
+#     'uekDailyStudentDO.mood':'好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上'# 工作内容
+# }
+# header = {
+#     'User-Agent':ua.random
+# }
+# data = {
+#     'username':'15835007400',
+#     'password':'111111'
+# }
+#
+# sess = requests.session()
+# sess.post(login,data=data)
+# res = sess.post(URL,data=ribao)
+# print(res.text)
+# # print(res.status_code)
+#
 
 
 
