@@ -9,7 +9,7 @@ from scrapy import signals
 import fake_useragent
 
 
-class IfengspiderSpiderMiddleware(object):
+class RibaospiderSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -57,7 +57,7 @@ class IfengspiderSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class IfengspiderDownloaderMiddleware(object):
+class RibaospiderDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -80,12 +80,11 @@ class IfengspiderDownloaderMiddleware(object):
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
         ua = fake_useragent.UserAgent()
-        request.headers["User-Agent"] = ua.random
-        print("-----------------")
-        print(request.meta['proxy'])
-        print("-----------------")
-
-        return request
+        request.headers['User-Agent'] = ua.random
+        # request.meta['proxy'] = "http://123.123.123.123"
+        print("111111111111111111111111111111")
+        
+        return None
 
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.
@@ -94,6 +93,9 @@ class IfengspiderDownloaderMiddleware(object):
         # - return a Response object
         # - return a Request object
         # - or raise IgnoreRequest
+        print("111111111111111111111111111111")
+        # print(response.text)
+        # print(response.ydh)
         return response
 
     def process_exception(self, request, exception, spider):
@@ -108,3 +110,19 @@ class IfengspiderDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class RibaospiderDownloaderMiddleware2:
+    def process_request(self,request,spider):
+        print("----------------------")
+        print(request.headers['User-Agent'])
+        print("----------------------")
+        print("22222222222222222222222222")
+        return None
+
+    def process_response(self,request,response,spider):
+        print("22222222222222222222222222")
+        # print(response.text)
+        response.ydh = "杨登辉"
+        return response
+    

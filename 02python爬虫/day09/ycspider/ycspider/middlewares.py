@@ -6,10 +6,11 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-import fake_useragent
+from selenium import webdriver
+from scrapy.http import TextResponse 
+import time
 
-
-class IfengspiderSpiderMiddleware(object):
+class YcspiderSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -57,7 +58,7 @@ class IfengspiderSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class IfengspiderDownloaderMiddleware(object):
+class YcspiderDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -79,13 +80,15 @@ class IfengspiderDownloaderMiddleware(object):
         # - or return a Request object
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
-        ua = fake_useragent.UserAgent()
-        request.headers["User-Agent"] = ua.random
-        print("-----------------")
-        print(request.meta['proxy'])
-        print("-----------------")
+        url = request.url
 
-        return request
+        driver = webdriver.Chrome(r"C:\Users\yangd\AppData\Local\Google\Chrome\Application\chromedriver.exe")
+        driver.get(url)
+        time.sleep(3)
+        body = driver.page_source
+        response = TextResponse(url,body=body.encode(),request=request)
+
+        return response
 
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.
@@ -94,6 +97,8 @@ class IfengspiderDownloaderMiddleware(object):
         # - return a Response object
         # - return a Request object
         # - or raise IgnoreRequest
+
+
         return response
 
     def process_exception(self, request, exception, spider):

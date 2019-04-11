@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for ifengspider project
+# Scrapy settings for ribaospider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'ifengspider'
+BOT_NAME = 'ribaospider'
 
-SPIDER_MODULES = ['ifengspider.spiders']
-NEWSPIDER_MODULE = 'ifengspider.spiders'
+SPIDER_MODULES = ['ribaospider.spiders']
+NEWSPIDER_MODULE = 'ribaospider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'
+USER_AGENT = 'ribaospider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -27,7 +27,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3
+#DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -47,26 +47,26 @@ DOWNLOAD_DELAY = 3
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'ifengspider.middlewares.IfengspiderSpiderMiddleware': 543,
+#    'ribaospider.middlewares.RibaospiderSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-
 DOWNLOADER_MIDDLEWARES = {
-   'ifengspider.middlewares.IfengspiderDownloaderMiddleware': 543,
+   'ribaospider.middlewares.RibaospiderDownloaderMiddleware': 543,
+   'ribaospider.middlewares.RibaospiderDownloaderMiddleware2': 600,
 }
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
-#EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
-#}
+EXTENSIONS = {
+   'scrapy.extensions.telnet.TelnetConsole': None,
+}
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'ifengspider.pipelines.IfengspiderPipeline': 300,
+#    'ribaospider.pipelines.RibaospiderPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

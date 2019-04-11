@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="" />
+    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/02python爬虫/day09/ifengspider/ifengspider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/02python爬虫/day09/ifengspider/ifengspider/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02python爬虫/day09/ifengspider/ifengspider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/02python爬虫/day09/ifengspider/ifengspider/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +65,10 @@
     <session id="-1278273664">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -94,7 +98,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -168,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,10 +184,17 @@
               <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
               <item name="02python爬虫" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
+              <item name="02python爬虫" type="462c0819:PsiDirectoryNode" />
+              <item name="day09" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -738,9 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,9 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <marker date="1554793221781" expanded="true" signature="199:204" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,10 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4176">
           <caret line="179" column="1" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="1" />
-          <folding>
-            <element signature="e#215#245#0" expanded="true" />
-            <marker date="1554721629932" expanded="true" signature="3659:3713" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
