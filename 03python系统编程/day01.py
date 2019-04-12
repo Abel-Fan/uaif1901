@@ -187,6 +187,9 @@ Event 事件锁
 # print(mylist)
 
 # RLock 重复锁，递归锁，可以锁很多次，但是解锁一一对应
+# 局部锁，在一个线程中可以实现重复获取锁，并且不需要释放锁代码依旧执行（其他线程局部不调用此锁时）。
+# 如果在多个线程中使用RLock，必须在线程局部获取锁和释放锁一一对应，否则其他线程会出现阻塞。
+
 # rlock = threading.RLock()
 # rlock.acquire()
 # rlock.acquire()
@@ -252,10 +255,10 @@ condition = threading.Condition()
 # print(dir(condition))
 """
 acquire() 获取锁
-notify() 通知其他等待线程
+notify(n=1) 通知其他等待线程,n代表通知数量
 notifyAll() 通知其他所有线程
 release() 释放锁
-wait() 等待
+wait(timeout=1) 等待,必须在获取锁之后
 wait_for(predicate, timeout=None) 等待 直到 predicate函数返回True 或超时
 """
 
@@ -271,12 +274,12 @@ class Produce(threading.Thread):
         condition.acquire()
         while True:
             global index
-            index+=1
             time.sleep(2)
-            print("%s出厂了"%car[index])
+            index += 1
+            print(self.name,"%s出厂了"%car[index])
             time.sleep(0.5)
             print("通知车主过来取车")
-            condition.notify()
+            condition.notify_all()
             if index>=len(car)-1:
                 print("订单完成")
                 condition.release()
@@ -284,17 +287,16 @@ class Produce(threading.Thread):
             else:
                 condition.wait()
 
-
 class Consumer(threading.Thread):
     def __init__(self):
         super().__init__()
     def run(self):
         condition.acquire()
         while True:
-            time.sleep(1)
-            print("%s提取了%s"%(p[index],car[index]))
-            time.sleep(0.5)
-            condition.notify()
+            # time.sleep(1)
+            print(self.name,"%s提取了%s"%(p[index],car[index]))
+            # time.sleep(0.5)
+            condition.notify_all()
             if index>=len(car)-1:
                 print("取车完成..")
                 condition.release()
@@ -305,6 +307,8 @@ class Consumer(threading.Thread):
 
 pro = Produce()
 pro.start()
+con = Consumer()
+con.start()
 con = Consumer()
 con.start()
 
