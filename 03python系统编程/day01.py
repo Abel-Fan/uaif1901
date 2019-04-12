@@ -37,14 +37,14 @@ join([timeout])  阻塞主线程,timeout为最长等待时间
 #
 arr = []
 # threads = []
-class myThread1(threading.Thread):
-    def __init__(self):
-        super().__init__()
-    def run(self):
-        # print("myThread1",threading.current_thread())
-        for i in range(10):
-            time.sleep(1)
-            arr.append(i)
+# class myThread1(threading.Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         # print("myThread1",threading.current_thread())
+#         for i in range(10):
+#             time.sleep(1)
+#             arr.append(i)
             # print(arr)
 #
 # class myThread2(threading.Thread):
@@ -84,6 +84,48 @@ stack_size([size]) 当前线程使用栈的大小， size 32k以上 32*1024  byt
 # print(threading.stack_size())
 
 
+# threading 常用模块 Thread
+"""
+Lock 锁 
+RLock  复用锁，递归锁
+Semaphore 信号锁
+Condition 条件锁
+Event 事件锁
+...
+"""
+# Lock 锁
+# 方法
+# acquire 上锁， 获取锁
+# release 解锁， 释放锁
 
+mylist = []
+threads = []
+num = 0
+
+lock = threading.Lock()
+
+class MyThread(threading.Thread):
+    def __init__(self):
+        super().__init__()
+    def run(self):
+        global num
+        lock.acquire()
+        num+=1
+        # 其他功能
+        time.sleep(0.0001)
+        mylist.append(num)
+        lock.release()
+        # 其他功能
+        time.sleep(1)
+
+for i in range(10):
+    t = MyThread()
+    threads.append(t)
+    t.start()
+
+for t in threads:
+    t.join()
+
+print(mylist)
 
 

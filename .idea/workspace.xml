@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03python系统编程/day01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01python基础/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01python基础/mymodules/aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/mymodules/aa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01python基础/mymodules/sonModules/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/mymodules/son/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01python基础/mymodules/sonModules/bb.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/mymodules/son/bb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01python基础/mymodules/sonModules/bb1.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/mymodules/son/bb1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01python基础/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/01python基础/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03python系统编程/day01.py" beforeDir="false" afterPath="$PROJECT_DIR$/03python系统编程/day01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,91 +85,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4495" />
+          <entry key="py" value="5214" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="4495" />
+          <entry key="Python" value="5214" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01python基础/add.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01python基础/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03python系统编程/day01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="81" column="34" lean-forward="true" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+            <state relative-caret-position="48">
+              <caret line="111" column="22" lean-forward="true" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="22" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <marker date="1555034746821" expanded="true" signature="63:535" ph="..." />
-                <marker date="1555034746821" expanded="true" signature="117:343" ph="..." />
-                <marker date="1555034746821" expanded="true" signature="602:808" ph="..." />
-                <marker date="1555034746821" expanded="true" signature="872:1546" ph="..." />
+                <marker date="1555038418674" expanded="true" signature="63:535" ph="..." />
+                <marker date="1555038418674" expanded="true" signature="117:343" ph="..." />
+                <marker date="1555038418674" expanded="true" signature="604:824" ph="..." />
+                <marker date="1555038418674" expanded="true" signature="1799:2181" ph="..." />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01python基础/mymodules/son/bb1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01python基础/mymodules/aa.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <marker date="1554967876266" expanded="true" signature="10:15" ph="..." />
-                <marker date="1554967876266" expanded="true" signature="77:82" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01python基础/mymodules/son/bb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-              <folding>
-                <marker date="1554965661922" expanded="true" signature="31:36" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01python基础/mymodules/son/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -594,12 +530,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22875299" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17871326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61989343" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5222025" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -859,9 +795,6 @@
     <entry file="file://$PROJECT_DIR$/01python基础/mymodules/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/01python基础/mymodules/son/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/01python基础/mymodules/aa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -904,16 +837,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01python基础/mymodules/son/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/03python系统编程/day01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="81" column="34" lean-forward="true" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+        <state relative-caret-position="48">
+          <caret line="111" column="22" lean-forward="true" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="22" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <marker date="1555034746821" expanded="true" signature="63:535" ph="..." />
-            <marker date="1555034746821" expanded="true" signature="117:343" ph="..." />
-            <marker date="1555034746821" expanded="true" signature="602:808" ph="..." />
-            <marker date="1555034746821" expanded="true" signature="872:1546" ph="..." />
+            <marker date="1555038418674" expanded="true" signature="63:535" ph="..." />
+            <marker date="1555038418674" expanded="true" signature="117:343" ph="..." />
+            <marker date="1555038418674" expanded="true" signature="604:824" ph="..." />
+            <marker date="1555038418674" expanded="true" signature="1799:2181" ph="..." />
           </folding>
         </state>
       </provider>
