@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03python系统编程/day01.py" beforeDir="false" afterPath="$PROJECT_DIR$/03python系统编程/day01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +67,9 @@
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -86,33 +86,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5970" />
+          <entry key="py" value="6816" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="5970" />
+          <entry key="Python" value="6816" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03python系统编程/day01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="142" column="17" lean-forward="true" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+            <state relative-caret-position="462">
+              <caret line="246" column="13" lean-forward="true" selection-start-line="204" selection-start-column="3" selection-end-line="246" selection-end-column="13" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <marker date="1555042009109" expanded="true" signature="63:535" ph="..." />
-                <marker date="1555042009109" expanded="true" signature="117:343" ph="..." />
-                <marker date="1555042009109" expanded="true" signature="604:824" ph="..." />
-                <marker date="1555042009109" expanded="true" signature="2559:3317" ph="..." />
-                <marker date="1555042009109" expanded="true" signature="2760:2769" ph="..." />
-                <marker date="1555042009109" expanded="true" signature="2784:2991" ph="..." />
+                <marker date="1555052022666" expanded="true" signature="3643:3650" ph="..." />
+                <marker date="1555052022666" expanded="true" signature="4100:4101" ph="..." />
               </folding>
             </state>
           </provider>
@@ -531,13 +527,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17871326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5222025" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6927176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -787,13 +784,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/DLLs/modules/bb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/DLLs/modules/bb.py" />
     <entry file="file://$PROJECT_DIR$/01python基础/mymodules/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -801,10 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <marker date="1554967876266" expanded="true" signature="10:15" ph="..." />
-            <marker date="1554967876266" expanded="true" signature="77:82" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,9 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding>
-            <marker date="1554965661922" expanded="true" signature="31:36" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,16 +828,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03python系统编程/day01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="142" column="17" lean-forward="true" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+        <state relative-caret-position="462">
+          <caret line="246" column="13" lean-forward="true" selection-start-line="204" selection-start-column="3" selection-end-line="246" selection-end-column="13" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <marker date="1555042009109" expanded="true" signature="63:535" ph="..." />
-            <marker date="1555042009109" expanded="true" signature="117:343" ph="..." />
-            <marker date="1555042009109" expanded="true" signature="604:824" ph="..." />
-            <marker date="1555042009109" expanded="true" signature="2559:3317" ph="..." />
-            <marker date="1555042009109" expanded="true" signature="2760:2769" ph="..." />
-            <marker date="1555042009109" expanded="true" signature="2784:2991" ph="..." />
+            <marker date="1555052022666" expanded="true" signature="3643:3650" ph="..." />
+            <marker date="1555052022666" expanded="true" signature="4100:4101" ph="..." />
           </folding>
         </state>
       </provider>

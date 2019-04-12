@@ -186,5 +186,62 @@ Event 事件锁
 # t2.join()
 # print(mylist)
 
+# RLock 重复锁，递归锁，可以锁很多次，但是解锁一一对应
+# rlock = threading.RLock()
+# rlock.acquire()
+# rlock.acquire()
+# rlock.acquire()
+# rlock.acquire()
+#
+# rlock.release()
+# rlock.release()
+# rlock.release()
+# rlock.release()
 
+# Condition条件锁
+#生产者消费者模式
 
+# 生产者负责生产
+# guo = []
+#
+# condition = threading.Condition()
+#
+# class Produce(threading.Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         condition.acquire()
+#         while True:
+#             time.sleep(1)
+#             guo.append("鱼丸")
+#             print("%s生产者,放了一个鱼丸，现在锅内还有%s鱼丸"%(self.name,len(guo)))
+#             if len(guo)>=5:
+#                 print('锅里已有%s个鱼丸'%len(guo))
+#                 condition.notify()
+#                 condition.wait()
+#
+#
+#
+# # 消费者负责消费
+# class Consumer(threading.Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         condition.acquire()
+#         while True:
+#             time.sleep(1.5)
+#             guo.pop()
+#             print("%s消费者,吃了一个鱼丸，现在锅内还有%s鱼丸" % (self.name, len(guo)))
+#             if len(guo)<=0:
+#                 print("锅里没有鱼丸了，请添加。。")
+#                 condition.notify()
+#                 condition.wait()
+#
+# #
+# #
+# pro = Produce()
+# pro.start()
+#
+#
+# con = Consumer()
+# con.start()
