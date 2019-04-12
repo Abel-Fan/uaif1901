@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03python系统编程/day01.py" beforeDir="false" afterPath="$PROJECT_DIR$/03python系统编程/day01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,14 +87,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6816" />
+          <entry key="py" value="8098" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="6816" />
+          <entry key="Python" value="8098" />
         </counts>
       </usages-collector>
     </session>
@@ -103,12 +104,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03python系统编程/day01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="246" column="13" lean-forward="true" selection-start-line="204" selection-start-column="3" selection-end-line="246" selection-end-column="13" />
+            <state relative-caret-position="48">
+              <caret line="279" column="32" selection-start-line="279" selection-start-column="32" selection-end-line="279" selection-end-column="32" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <marker date="1555052022666" expanded="true" signature="3643:3650" ph="..." />
-                <marker date="1555052022666" expanded="true" signature="4100:4101" ph="..." />
+                <marker date="1555059859072" expanded="true" signature="3643:3650" ph="..." />
+                <marker date="1555059859072" expanded="true" signature="4100:4101" ph="..." />
+                <marker date="1555059859072" expanded="true" signature="4886:5901" ph="..." />
+                <marker date="1555059859072" expanded="true" signature="5411:5843" ph="..." />
               </folding>
             </state>
           </provider>
@@ -527,14 +530,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17871326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6927176" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.56483126" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -828,12 +830,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03python系统编程/day01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="246" column="13" lean-forward="true" selection-start-line="204" selection-start-column="3" selection-end-line="246" selection-end-column="13" />
+        <state relative-caret-position="48">
+          <caret line="279" column="32" selection-start-line="279" selection-start-column="32" selection-end-line="279" selection-end-column="32" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <marker date="1555052022666" expanded="true" signature="3643:3650" ph="..." />
-            <marker date="1555052022666" expanded="true" signature="4100:4101" ph="..." />
+            <marker date="1555059859072" expanded="true" signature="3643:3650" ph="..." />
+            <marker date="1555059859072" expanded="true" signature="4100:4101" ph="..." />
+            <marker date="1555059859072" expanded="true" signature="4886:5901" ph="..." />
+            <marker date="1555059859072" expanded="true" signature="5411:5843" ph="..." />
           </folding>
         </state>
       </provider>

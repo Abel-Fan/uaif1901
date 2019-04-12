@@ -245,3 +245,66 @@ Event 事件锁
 #
 # con = Consumer()
 # con.start()
+
+
+condition = threading.Condition()
+
+# print(dir(condition))
+"""
+acquire() 获取锁
+notify() 通知其他等待线程
+notifyAll() 通知其他所有线程
+release() 释放锁
+wait() 等待
+wait_for(predicate, timeout=None) 等待 直到 predicate函数返回True 或超时
+"""
+
+car = ['大众','丰田','宝马','奔驰']
+p =   ['小明','小红','小爱','小冰']
+index = -1
+
+
+class Produce(threading.Thread):
+    def __int__(self):
+        super().__init__()
+    def run(self):
+        condition.acquire()
+        while True:
+            global index
+            index+=1
+            time.sleep(2)
+            print("%s出厂了"%car[index])
+            time.sleep(0.5)
+            print("通知车主过来取车")
+            condition.notify()
+            if index>=len(car)-1:
+                print("订单完成")
+                condition.release()
+                break
+            else:
+                condition.wait()
+
+
+class Consumer(threading.Thread):
+    def __init__(self):
+        super().__init__()
+    def run(self):
+        condition.acquire()
+        while True:
+            time.sleep(1)
+            print("%s提取了%s"%(p[index],car[index]))
+            time.sleep(0.5)
+            condition.notify()
+            if index>=len(car)-1:
+                print("取车完成..")
+                condition.release()
+                break
+            else:
+                condition.wait()
+
+
+pro = Produce()
+pro.start()
+con = Consumer()
+con.start()
+
