@@ -98,34 +98,93 @@ Event 事件锁
 # acquire 上锁， 获取锁
 # release 解锁， 释放锁
 
-mylist = []
-threads = []
-num = 0
+# 临界区 ：访问公共资源的程序片段
+#
+# mylist = []
+# threads = []
+# num = 0
+#
+# lock = threading.Lock()
+#
+# class MyThread(threading.Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         global num
+#         lock.acquire()
+#         num+=1
+#         # 其他功能
+#         time.sleep(0.0001)
+#         mylist.append(num)
+#         lock.release()
+#         # 其他功能
+#         time.sleep(1)
+#
+# for i in range(10):
+#     t = MyThread()
+#     threads.append(t)
+#     t.start()
+#
+# for t in threads:
+#     t.join()
+#
+# print(mylist)
 
-lock = threading.Lock()
+# lock 获取锁以及释放锁要一一对应
+# lock = threading.Lock()
+# 死锁
+# lock.acquire()  # 将lock 状态调为 locked
+# lock.acquire()  # lock 阻塞等待 lock被释放
 
-class MyThread(threading.Thread):
-    def __init__(self):
-        super().__init__()
-    def run(self):
-        global num
-        lock.acquire()
-        num+=1
-        # 其他功能
-        time.sleep(0.0001)
-        mylist.append(num)
-        lock.release()
-        # 其他功能
-        time.sleep(1)
+# lock.release() # RuntimeError: release unlocked lock
 
-for i in range(10):
-    t = MyThread()
-    threads.append(t)
-    t.start()
 
-for t in threads:
-    t.join()
+#
+# lock1 = threading.Lock()
+# lock2 = threading.Lock()
+#
+# num = 0
+# mylist = []
+#
+# class myThread(threading.Thread):
+#     def __init__(self,num):
+#         super().__init__()
+#         self.num = num
+#
+#     def run(self):
+#         if self.num==1:
+#             self.fun1()
+#         else:
+#             self.fun2()
+#
+#     def fun1(self):
+#         lock1.acquire()
+#         time.sleep(0.5)
+#         lock2.acquire()
+#         global  num
+#         num+=1
+#         mylist.append(num)
+#         lock2.release()
+#         lock1.release()
+#
+#     def fun2(self):
+#         lock2.acquire()
+#         time.sleep(0.5)
+#         lock1.acquire()
+#         global num
+#         num += 1
+#         mylist.append(num)
+#         lock1.release()
+#         lock2.release()
+#
+#
+# t1 = myThread(1)
+# t2 = myThread(2)
+# t1.start()
+# t2.start()
+# t1.join()
+# t2.join()
+# print(mylist)
 
-print(mylist)
 
 
