@@ -79,12 +79,100 @@ con.notify(n=1) # 通知其他线程 n为数量
 con.notify_all()  # 通知所有线程
 con.wait_for(predicate=fun(),timeout=-1)
 """
-import time
-print("主线程开始")
-def fun():
-    time.sleep(2)
-    return True
-con.wait_for(fun)   # 阻塞，直到 predicate 返回True
-print("主线程结束..")
+# import time
+# print("主线程开始")
+# def fun():
+#     time.sleep(2)
+#     return True
+# con.wait_for(fun)   # 阻塞，直到 predicate 返回True
+# print("主线程结束..")
+#
+
+# 信号量对象
+# Semphore，是一种带计数的线程同步机制，当调用release时，增加计数，当acquire时，减少计数，当计数为0时，自动阻塞，等待release被调用。
+
+# from threading import Thread,Semaphore
+# import time,random
+#
+# sem = Semaphore(10) # 班级
+# num = 0  # 人数
+# students = []
+#
+# class Consumer(Thread):
+#     def __init__(self,sem):
+#         super().__init__()
+#         self.sem = sem
+#     def run(self):
+#         time.sleep(random.randint(3,10))
+#         print("结训一人")
+#         global  num
+#         num-=1
+#         self.sem.release()
+#
+# class Produces(Thread):
+#     def __init__(self):  # 招生
+#         super().__init__()
+#     def run(self):
+#         global num
+#         sem.acquire()
+#         num+=1
+#         print("班级人数:%s"%num)
+#         t = Consumer(sem)
+#         t.start()
+#
+# for i in range(20):
+#     t = Produces()
+#     t.start()
+
+
+# Event  直行红灯
+# from threading import Event,Thread
+# import time
+#
+# event = Event()
+# event.clear() # 将Event开关设置为False
+# """
+# event.set()  将开关设置为True
+# event.isSet()  查看开关是否为True
+# event.wait([timeout]) 等待
+# """
+# num = 4
+#
+# class RedGreen(Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         while True:
+#             global num, flag
+#             time.sleep(1)
+#             num -= 1
+#
+#             print("倒计时:%s"%num)
+#             if num==0:
+#                 event.set()
+#                 time.sleep(2)
+#                 event.clear()
+#             if num<=0:
+#                 num=4
+#
+#
+#
+# class Car(Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         while True:
+#             if event.isSet():
+#                 time.sleep(2)
+#                 print("%s:直行通过红路灯"%self.name)
+#             else:
+#                 event.wait()
+#
+# t1 = RedGreen()
+# t1.start()
+#
+# for i in range(5):
+#     c = Car()
+#     c.start()
 
 
