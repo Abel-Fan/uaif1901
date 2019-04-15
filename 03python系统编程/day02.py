@@ -211,14 +211,64 @@ broken 一个布尔值为True表示栅栏受损
 
 # Lock 、 RLock 、 Condition 、 Semaphore 和 BoundedSemaphore 对象可以用作 with 语句的上下文管理器。
 
-import threading
-lock = threading.Lock()
+# import threading
+# lock = threading.Lock()
+#
+# def fun(num):
+#     with lock as l:
+#         time.sleep(1)
+#         print(num)
+#
+# for i in range(10):
+#     t = threading.Thread(target=fun,args=(i,))
+#     t.start()
 
-def fun(num):
-    with lock as l:
-        time.sleep(1)
-        print(num)
+
+from queue import Queue,LifoQueue,PriorityQueue
+"""
+队列 是一种数据结构
+Queue FiFo  先入先出
+LiFoQueue LiFo 后入先出 
+PriorityQueue 优先级队列
+"""
+import random
+
+# q = Queue(10)
+# q= LifoQueue(10)
+# q = PriorityQueue(10)
+# arr = ['1','10','90','30','a']
+# for i in range(10):
+#     q.put(random.choice(arr))
+#
+#
+# for i in range(10):
+#     print(q.get())
+
+q = Queue(10)
+
+class Produce(Thread):
+    def __init__(self):
+        super().__init__()
+    def run(self):
+        while True:
+            if not q.full():
+                time.sleep(1)
+                q.put("%s放的鱼丸"%self.name)
+                print("%s放了鱼丸"%self.name)
+
+class Consumer(Thread):
+    def __init__(self):
+        super().__init__()
+    def run(self):
+        while True:
+            if not q.empty():
+                time.sleep(2)
+                yw = q.get()
+                print("%s吃了%s"%(self.name,yw))
+
 
 for i in range(10):
-    t = threading.Thread(target=fun,args=(i,))
-    t.start()
+    p = Produce()
+    p.start()
+    c = Consumer()
+    c.start()

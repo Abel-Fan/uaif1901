@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03python系统编程/day02.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="217" column="19" lean-forward="true" selection-start-line="217" selection-start-column="19" selection-end-line="217" selection-end-column="19" />
+            <state relative-caret-position="486">
+              <caret line="264" column="29" selection-start-line="264" selection-start-column="29" selection-end-line="264" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -306,7 +306,7 @@
       <workItem from="1555118381117" duration="672000" />
       <workItem from="1555143714169" duration="115000" />
       <workItem from="1555144721995" duration="1431000" />
-      <workItem from="1555297489833" duration="12936000" />
+      <workItem from="1555297489833" duration="16036000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -452,7 +452,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15154000" />
+    <option name="totallyTimeSpent" value="18254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +472,7 @@
       <window_info content_ui="combo" id="Project" order="2" weight="0.18350849" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6642984" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.57548845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,7 +536,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/uaif1901$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1555300411424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
-    <SUITE FILE_PATH="coverage/uaif1901$day02.coverage" NAME="day02 Coverage Results" MODIFIED="1555318272612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
+    <SUITE FILE_PATH="coverage/uaif1901$day02.coverage" NAME="day02 Coverage Results" MODIFIED="1555323106912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/copy.py">
@@ -780,10 +780,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="733" column="11" selection-start-line="733" selection-start-column="10" selection-end-line="733" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/03python系统编程/day02.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="217" column="19" lean-forward="true" selection-start-line="217" selection-start-column="19" selection-end-line="217" selection-end-column="19" />
+        <state relative-caret-position="486">
+          <caret line="264" column="29" selection-start-line="264" selection-start-column="29" selection-end-line="264" selection-end-column="29" />
         </state>
       </provider>
     </entry>
