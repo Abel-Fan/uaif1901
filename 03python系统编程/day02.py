@@ -175,4 +175,50 @@ con.wait_for(predicate=fun(),timeout=-1)
 #     c = Car()
 #     c.start()
 
+# 栅栏
+from threading import Thread,Barrier
+import time,random
 
+def fun():
+    print("<比赛开始>")
+
+bar = Barrier(10,action=fun)
+
+"""
+parties 栅栏打开所需线程数量
+n_waiting 当前正在栅栏中阻塞的线程
+wait() 等待
+rest() 重置栅栏
+abort() 使栅栏破损
+broken 一个布尔值为True表示栅栏受损
+"""
+# 田径比赛
+#
+# class Per(Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         time.sleep(1)
+#         print("%s已经准备好了..."%self.name)
+#         bar.wait()
+#         time.sleep(random.randint(2,5))
+#         print("%s跑完了全程"%self.name)
+#
+# for i in range(10):
+#     p = Per()
+#     p.start()
+
+
+# Lock 、 RLock 、 Condition 、 Semaphore 和 BoundedSemaphore 对象可以用作 with 语句的上下文管理器。
+
+import threading
+lock = threading.Lock()
+
+def fun(num):
+    with lock as l:
+        time.sleep(1)
+        print(num)
+
+for i in range(10):
+    t = threading.Thread(target=fun,args=(i,))
+    t.start()
