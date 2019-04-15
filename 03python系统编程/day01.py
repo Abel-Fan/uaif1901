@@ -261,54 +261,54 @@ release() 释放锁
 wait(timeout=1) 等待,必须在获取锁之后
 wait_for(predicate, timeout=None) 等待 直到 predicate函数返回True 或超时
 """
-
-car = ['大众','丰田','宝马','奔驰']
-p =   ['小明','小红','小爱','小冰']
-index = -1
-
-
-class Produce(threading.Thread):
-    def __int__(self):
-        super().__init__()
-    def run(self):
-        condition.acquire()
-        while True:
-            global index
-            time.sleep(2)
-            index += 1
-            print(self.name,"%s出厂了"%car[index])
-            time.sleep(0.5)
-            print("通知车主过来取车")
-            condition.notify_all()
-            if index>=len(car)-1:
-                print("订单完成")
-                condition.release()
-                break
-            else:
-                condition.wait()
-
-class Consumer(threading.Thread):
-    def __init__(self):
-        super().__init__()
-    def run(self):
-        condition.acquire()
-        while True:
-            # time.sleep(1)
-            print(self.name,"%s提取了%s"%(p[index],car[index]))
-            # time.sleep(0.5)
-            condition.notify_all()
-            if index>=len(car)-1:
-                print("取车完成..")
-                condition.release()
-                break
-            else:
-                condition.wait()
-
-
-pro = Produce()
-pro.start()
-con = Consumer()
-con.start()
-con = Consumer()
-con.start()
+#
+# car = ['大众','丰田','宝马','奔驰']
+# p =   ['小明','小红','小爱','小冰']
+# index = -1
+#
+#
+# class Produce(threading.Thread):
+#     def __int__(self):
+#         super().__init__()
+#     def run(self):
+#         condition.acquire()
+#         while True:
+#             global index
+#             time.sleep(2)
+#             index += 1
+#             print(self.name,"%s出厂了"%car[index])
+#             time.sleep(0.5)
+#             print("通知车主过来取车")
+#             condition.notify_all()
+#             if index>=len(car)-1:
+#                 print("订单完成")
+#                 condition.release()
+#                 break
+#             else:
+#                 condition.wait()
+#
+# class Consumer(threading.Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         condition.acquire()
+#         while True:
+#             # time.sleep(1)
+#             print(self.name,"%s提取了%s"%(p[index],car[index]))
+#             # time.sleep(0.5)
+#             condition.notify_all()
+#             if index>=len(car)-1:
+#                 print("取车完成..")
+#                 condition.release()
+#                 break
+#             else:
+#                 condition.wait()
+#
+#
+# pro = Produce()
+# pro.start()
+# con = Consumer()
+# con.start()
+# con = Consumer()
+# con.start()
 
