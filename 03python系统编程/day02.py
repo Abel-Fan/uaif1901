@@ -244,31 +244,30 @@ import random
 # for i in range(10):
 #     print(q.get())
 
-q = Queue(10)
-
-class Produce(Thread):
-    def __init__(self):
-        super().__init__()
-    def run(self):
-        while True:
-            if not q.full():
-                time.sleep(1)
-                q.put("%s放的鱼丸"%self.name)
-                print("%s放了鱼丸"%self.name)
-
-class Consumer(Thread):
-    def __init__(self):
-        super().__init__()
-    def run(self):
-        while True:
-            if not q.empty():
-                time.sleep(2)
-                yw = q.get()
-                print("%s吃了%s"%(self.name,yw))
-
-
-for i in range(10):
-    p = Produce()
-    p.start()
-    c = Consumer()
-    c.start()
+# q = Queue(10)
+#
+# class Produce(Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         while True:
+#             if not q.full():
+#                 time.sleep(1)
+#                 q.put("%s放的鱼丸"%self.name)
+#                 print("%s放了鱼丸"%self.name)
+#
+# class Consumer(Thread):
+#     def __init__(self):
+#         super().__init__()
+#     def run(self):
+#         while True:
+#             if not q.empty():
+#                 time.sleep(2)
+#                 yw = q.get()
+#                 print("%s吃了%s"%(self.name,yw))
+#
+# for i in range(10):
+#     p = Produce()
+#     p.start()
+#     c = Consumer()
+#     c.start()
