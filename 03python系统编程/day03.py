@@ -113,3 +113,124 @@ join()  阻塞主线程直到所有元素处理完毕
   
 """
 
+#! /usr/bin/python
+
+# from threading import Thread,Lock
+# import time
+#
+# def fun():
+#     num = 0
+#     for i in range(10000000):
+#         num = i+1
+# arr = []
+# start = time.time()
+# for i in range(2):
+#     t = Thread(target=fun)
+#     t.start()
+#     arr.append(t)
+#     # t.join()
+# for t in arr:
+#     t.join()
+#
+# end = time.time()
+# print(end-start)
+
+
+# 进程概述
+# GIL问题
+
+from multiprocessing import Process
+import time,multiprocessing
+# 创建进程方式
+# 方式一、
+# def fun(num):
+#     time.sleep(5)
+#     print(num)
+# # 方式二、
+# class MyProcess(Process):
+#     def __int__(self):
+#         super().__init__()
+#     def run(self):
+#         time.sleep(3)
+#         print('进程退出')
+#
+# if __name__ == "__main__":
+#     pro = Process(target=fun,args=(123,))
+    # pro.start()
+    # print(pro.pid)
+    # print(pro.name)
+    # print(pro.daemon)
+    # print(pro.is_alive())
+    # print(pro.authkey)
+    # # pro.terminate()
+    # # time.sleep(6)
+    # print(pro.exitcode)
+    #
+    # pro = MyProcess()
+    # pro.start()
+    # print(multiprocessing.cpu_count())
+    # print(multiprocessing.get_all_start_methods() )
+    # print(multiprocessing.get_context() )
+    # print(multiprocessing.get_start_method())
+
+# arr = []
+# ProcessArr = []
+# class MyProcess(Process):
+#     def __init__(self):
+#         super().__init__()
+#
+#     def run(self):
+#         global arr
+#         for i in range(10):
+#             arr.append(i)
+#         print(id(arr))
+#
+# if __name__ == "__main__":
+#     for i in range(5):
+#         p = MyProcess()
+#         p.start()
+#         p.join()
+
+
+# arr = []
+#
+# def run():
+#     for i in range(10):
+#         arr.append(i)
+#
+# for i in range(5):
+#     run()
+#
+# print(arr)
+
+
+# 数据共享
+# Queue Pipe
+
+from multiprocessing import Queue
+que = Queue(10)
+arr = []
+
+class MyProcess(Process):
+    def __init__(self,queue):
+        super().__init__()
+        self.queue = queue
+    def run(self):
+        for i in range(5):
+            self.queue.put(i)
+
+class MyProcess2(Process):
+    def __init__(self,queue):
+        super().__init__()
+        self.queue = queue
+    def run(self):
+        for i in range(5):
+            print(self.queue.get())
+
+if __name__ == "__main__":
+    p = MyProcess(que)
+    p.start()
+    p.join()
+    p2 = MyProcess2(que)
+    p2.start()
+    p2.join()
