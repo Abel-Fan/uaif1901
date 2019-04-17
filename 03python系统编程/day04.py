@@ -52,7 +52,9 @@ close()
 Queue 类似于queue.Queue
 """
 from multiprocessing import Process,Queue,Pipe
-import queue,time
+from threading import Thread
+import threading
+import queue,time,random
 
 # def fun1(q):
 #     print('fun1 id:', id(que))
@@ -92,3 +94,42 @@ import queue,time
 #     p1.start()
 #     p2 = Process(target=fun2,args=(con2,))
 #     p2.start()
+
+# 一个进程 既能接收信息也能发送信息
+
+def tfun1(pi,name):
+    while True:
+        print("%s接收消息：%s"%(name,pi.recv()))
+def tfun2(pi,name):
+    while True:
+        time.sleep(random.randint(1,5))
+        con = name+":"+str(time.time())
+        print("%s发送了消息"%name)
+        pi.send(con)
+
+def fun1(pi):
+    # 发送消息
+    t2 = Thread(target=tfun2, args=(pi, 'process-1'))
+    t2.start()
+    # 接收消息
+    t1 = Thread(target=tfun1,args=(pi,"process-2"))
+    t1.start()
+    print("p1",threading.enumerate())
+
+def fun2(pi):
+    # 向进程p1发送消息
+    t2 = Thread(target=tfun2, args=(pi, 'process-2'))
+    t2.start()
+    # 接收
+    t1 = Thread(target=tfun1, args=(pi,'process-1'))
+    t1.start()
+
+
+
+if __name__ == "__main__":
+    con1,con2 = Pipe()
+    p1 = Process(target=fun1,args=(con1,))
+    p2 = Process(target=fun2,args=(con2,))
+    p1.start()
+    p2.start()
+
