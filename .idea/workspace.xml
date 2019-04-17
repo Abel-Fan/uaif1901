@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03python系统编程/day04.py" beforeDir="false" afterPath="$PROJECT_DIR$/03python系统编程/day04.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,10 +25,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03python系统编程/day04.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+            <state relative-caret-position="32">
+              <caret line="247" column="36" selection-start-line="247" selection-start-column="36" selection-end-line="247" selection-end-column="36" />
               <folding>
-                <element signature="e#777#823#0" expanded="true" />
+                <element signature="e#777#840#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,8 +96,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="564" />
-    <option name="y" value="144" />
+    <option name="x" value="-327" />
+    <option name="y" value="15" />
     <option name="width" value="1512" />
     <option name="height" value="870" />
   </component>
@@ -324,7 +325,7 @@
       <workItem from="1555378161553" duration="5696000" />
       <workItem from="1555398115274" duration="1932000" />
       <workItem from="1555403874438" duration="3481000" />
-      <workItem from="1555462637898" duration="7907000" />
+      <workItem from="1555462637898" duration="17137000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -470,7 +471,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37471000" />
+    <option name="totallyTimeSpent" value="46701000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,20 +484,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16734034" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.16734034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5133215" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.69627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49960285" weight="0.73179394" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49960285" visible="true" weight="0.73179394" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039715" side_tool="true" weight="0.5399645" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -553,7 +553,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="22" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/uaif1901$day04.coverage" NAME="day04 Coverage Results" MODIFIED="1555472378070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
+    <SUITE FILE_PATH="coverage/uaif1901$day04.coverage" NAME="day04 Coverage Results" MODIFIED="1555490127980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1555300411424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$day03.coverage" NAME="day03 Coverage Results" MODIFIED="1555465083811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$day02.coverage" NAME="day02 Coverage Results" MODIFIED="1555384508723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
@@ -835,12 +835,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/带课班级资料/UAIF1807/进程线程/进程线程案例/copy/cp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/03python系统编程/day04.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        <state relative-caret-position="32">
+          <caret line="247" column="36" selection-start-line="247" selection-start-column="36" selection-end-line="247" selection-end-column="36" />
           <folding>
-            <element signature="e#777#823#0" expanded="true" />
+            <element signature="e#777#840#0" expanded="true" />
           </folding>
         </state>
       </provider>

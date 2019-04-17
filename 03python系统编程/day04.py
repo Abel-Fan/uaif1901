@@ -51,7 +51,7 @@ close()
 数据交换
 Queue 类似于queue.Queue
 """
-from multiprocessing import Process,Queue,Pipe
+from multiprocessing import Process,Queue,Pipe,Array,Value,Pool
 from threading import Thread
 import threading
 import queue,time,random
@@ -97,39 +97,152 @@ import queue,time,random
 
 # 一个进程 既能接收信息也能发送信息
 
-def tfun1(pi,name):
-    while True:
-        print("%s接收消息：%s"%(name,pi.recv()))
-def tfun2(pi,name):
-    while True:
-        time.sleep(random.randint(1,5))
-        con = name+":"+str(time.time())
-        print("%s发送了消息"%name)
-        pi.send(con)
+# def tfun1(pi,name):
+#     while True:
+#         print("%s接收消息：%s"%(name,pi.recv()))
+# def tfun2(pi,name):
+#     while True:
+#         time.sleep(random.randint(1,5))
+#         con = name+":"+str(time.time())
+#         print("%s发送了消息"%name)
+#         pi.send(con)
+#
+# def fun1(pi):
+#     # 发送消息
+#     t2 = Thread(target=tfun2, args=(pi, 'process-1'))
+#     t2.start()
+#     # 接收消息
+#     t1 = Thread(target=tfun1,args=(pi,"process-2"))
+#     t1.start()
+#     print("p1",threading.enumerate())
+#
+# def fun2(pi):
+#     # 向进程p1发送消息
+#     t2 = Thread(target=tfun2, args=(pi, 'process-2'))
+#     t2.start()
+#     # 接收
+#     t1 = Thread(target=tfun1, args=(pi,'process-1'))
+#     t1.start()
+#
+#
+#
+# if __name__ == "__main__":
+#     con1,con2 = Pipe()
+#     p1 = Process(target=fun1,args=(con1,))
+#     p2 = Process(target=fun2,args=(con2,))
+#     p1.start()
+#     p2.start()
 
-def fun1(pi):
-    # 发送消息
-    t2 = Thread(target=tfun2, args=(pi, 'process-1'))
-    t2.start()
-    # 接收消息
-    t1 = Thread(target=tfun1,args=(pi,"process-2"))
-    t1.start()
-    print("p1",threading.enumerate())
+# def fun1(arr,value):
+#     arr[0] = 9
+#     for i in range(len(arr)):
+#         arr[i]=arr[i]+1
+#
+#     value.value = 10
+# def fun2(arr,value):
+#     time.sleep(2)
+#     for i in arr:
+#         print(i)
+#     print(value.value)
+#
+#
+#
+# if __name__ == "__main__":
+#
+#     arr = Array('b',range(10)) #  Array('模式','数据')
+#     value = Value('b',1)
+#     p1 = Process(target=fun1,args=(arr,value))
+#     p1.start()
+#
+#     p2 = Process(target=fun2, args=(arr,value))
+#     p2.start()
 
-def fun2(pi):
-    # 向进程p1发送消息
-    t2 = Thread(target=tfun2, args=(pi, 'process-2'))
-    t2.start()
-    # 接收
-    t1 = Thread(target=tfun1, args=(pi,'process-1'))
-    t1.start()
+# 进程池 Pool
+# def fun():
+#     time.sleep(1)
+#     return 123
+#
+# def fun2(item):
+#     return item+1
+#
+# if __name__ == "__main__":
+#     pool = Pool(100)  # 创建进程池 5代表进程池的进程数量
+#     # res =pool.apply(fun)
+#     # res = pool.apply_async(fun)
+#     # res.wait()
+#     # print(res.get())
+#     start = time.time()
+#     res = pool.map(fun2,range(100000))
+#     # res = map(fun2,range(100000))
+#     for i in res:
+#         print(i)
+#     print(res)
+#     end = time.time()
+#     print('运行总时间：%s'%(end-start))
 
 
+# if __name__ == '__main__':
+    # start = time.time()
+    # x = [list(range(10)), list(range(20,30)),
+    #      list(range(50,60)), list(range(80,90))]
+    # with Pool(2) as p:
+    #     print(p.map(sum, x))
 
+    # print(list(map(sum,x)))
+
+    # end = time.time()
+    #
+    # print("运行总时间%s"%(end-start))
+
+
+# 进程池
+# 为什么要用进程池：
+# pool = Pool(num)
+# apply(fun,args=(),kwds={})
+# 通过进程池对象调用fun函数,阻塞主进程运行
+# apply_async(fun,args=(),kwds={},callback=函数,error_callback=函数)
+# 通过进程池对象调用fun函数，不会阻塞主进程，callback 进程成功执行完成的回调函数。error_callback 进程执行失败执行的回调函数
+# map(函数,iter)  是 map()函数的多进程版本
+
+# def fun(num):
+#     time.sleep(2)
+#     arr = []
+#     for i in range(num):
+#         arr.append(i+1)
+#     return arr
+#
+#
+# def fun2(item):
+#     print("调用完成。。。。")
+#
+# def fun3(item):
+#     print("error")
 if __name__ == "__main__":
-    con1,con2 = Pipe()
-    p1 = Process(target=fun1,args=(con1,))
-    p2 = Process(target=fun2,args=(con2,))
-    p1.start()
-    p2.start()
+    pool = Pool(5)
+    arr = list(range(1,10000))
+    # apply
+    # for i in range(1,21):
+    #     res = pool.apply(fun,args=(i,))
+    #     print(res)
 
+    # apply_async()
+    #
+    # for i in range(1,21):
+    #     applyObje = pool.apply_async(fun,args=(i,),callback=fun2,error_callback=fun3)
+    #     arr.append(applyObje)
+    #
+    # for item in arr:
+    #     item.wait()
+    #     print(item.get())
+    start = time.time()
+    res1 = sum(arr)
+    res2 = sum(range(1,20))
+    res3 = sum(range(10,40))
+    res4 = sum(range(100,300))
+    res5 = sum(range(500,1000))
+    # res = pool.map(sum,[arr,range(1,20),range(10,40),range(100,300),range(500,1000)])
+    # print(res)
+    print(res1,res2,res3,res4,res5)
+    end = time.time()
+
+    print("end...时间：%s"%(end-start))
