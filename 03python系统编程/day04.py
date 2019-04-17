@@ -51,10 +51,7 @@ close()
 数据交换
 Queue 类似于queue.Queue
 """
-from multiprocessing import Process,Queue,Pipe,Array,Value,Pool
-from threading import Thread
-import threading
-import queue,time,random
+from multiprocessing import Process,Manager
 
 # def fun1(q):
 #     print('fun1 id:', id(que))
@@ -217,9 +214,9 @@ import queue,time,random
 #
 # def fun3(item):
 #     print("error")
-if __name__ == "__main__":
-    pool = Pool(5)
-    arr = list(range(1,10000))
+# if __name__ == "__main__":
+#     pool = Pool(5)
+#     arr = list(range(1,10000))
     # apply
     # for i in range(1,21):
     #     res = pool.apply(fun,args=(i,))
@@ -234,15 +231,40 @@ if __name__ == "__main__":
     # for item in arr:
     #     item.wait()
     #     print(item.get())
-    start = time.time()
-    res1 = sum(arr)
-    res2 = sum(range(1,20))
-    res3 = sum(range(10,40))
-    res4 = sum(range(100,300))
-    res5 = sum(range(500,1000))
+    # start = time.time()
+    # res1 = sum(arr)
+    # res2 = sum(range(1,20))
+    # res3 = sum(range(10,40))
+    # res4 = sum(range(100,300))
+    # res5 = sum(range(500,1000))
     # res = pool.map(sum,[arr,range(1,20),range(10,40),range(100,300),range(500,1000)])
     # print(res)
-    print(res1,res2,res3,res4,res5)
-    end = time.time()
+    # print(res1,res2,res3,res4,res5)
+    # end = time.time()
+    #
+    # print("end...时间：%s"%(end-start))
 
-    print("end...时间：%s"%(end-start))
+def fun1(d,l):
+    print(d['name'])
+    print(l)
+
+
+def fun2(mylist,mydict,arr,value):
+    pass
+    # time.sleep(1)
+    # print(mylist[0])
+    # print(mydict['name'])
+    # for i in arr:
+    #     print(i)
+    # print(value.value)
+
+
+if __name__ == "__main__":
+    manager = Manager()
+    d = manager.dict({'name':'horns'})
+    l = manager.list(range(10))
+
+    p1 = Process(target=fun1,args=(d,l))
+    p1.start()
+    # p1.join()
+
