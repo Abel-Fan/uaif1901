@@ -267,4 +267,3 @@ if __name__ == "__main__":
     p1 = Process(target=fun1,args=(d,l))
     p1.start()
     # p1.join()
-
