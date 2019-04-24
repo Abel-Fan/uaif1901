@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<style>
+    div{
+        width:200px;
+        height:200px;
+        border:1px solid red;
+        float:left;
+    }
+</style>
+<body>
+    <div></div>
+</body>
+<!--
+jQuery,javaScript的框架
+-->
+<script>
+    // jQuery核心函数
+    // $("div")
+    // 返回jQuery对象
+    // $("<div>this is div</div>").appendTo("html")
+    // 返回jQuery节点
+    // $(function(){})  类似于 window.onload=function(){}
+    //$(document.querySelect('div'))
+    //可以传入原生js元素，转化为jQuery对象
+
+    // jQuery处理多库共存的方法
+    // $= "123";
+    // (function($){
+    //     $
+    // })(jQuery)
+
+
+    // jQuery 选择器
+    // $("选择器")
+
+    // js选择器
+    // document.querySelector
+    // document.querySelectorAll
+    // document.getElementByID
+    // document.getElementsByClassName
+    // document.getElementsByTagName
+
+    // console.log($("div:first"))
+
+    // $("div").click(function(event){
+    //     console.dir(event)
+    // })
+
+    // $("div").click(function(){
+    //     alert(123)
+    // }).eq(0).mouseover(function(){
+    //     console.log("移入")
+    // })
+
+    // 浏览器的同源策略
+    // 同源：相同域名
+
+    // $.ajax({
+    //     'url':'https://www.toutiao.com/stream/widget/local_weather/city/',
+    //     dataType:"jsonp",
+    //     success:function(data){   //请求成功之后执行的函数
+    //         console.log(data)
+    //     }
+    // })
+
+    // jsonp 方法
+
+    // function aa(data){
+    //     console.log(data)
+    // }
+    // $("div").click(function(){
+    //     $('head').append("<script src='https://www.toutiao.com/stream/widget/local_weather/city/?callback=aa'> <\/script>")
+    // })
+
+
+    // url1 https://www.toutiao.com/stream/widget/local_weather/data/?city=太原
+    // url2 https://www.toutiao.com/stream/widget/local_weather/city/
+
+
+     $('div').ajaxSend(function(){
+         console.log('send')
+     });
+     $("div").ajaxSuccess(function(){
+         console.log("success")
+     })
+
+
+
+
+    $.ajax({
+        'url':"https://www.toutiao.com/stream/widget/local_weather/data/",
+        dataType:'jsonp',
+        type:"get",    // 请求方式get post
+        data:{'city':'上海'},
+        success:function(data){
+            console.log(data)
+        }
+    });
+
+
+</script>
+</html>

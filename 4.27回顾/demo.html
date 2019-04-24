@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="http://"> -->
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+</head>
+<body>
+    <!-- <img src="" alt=""> -->
+    <iframe src="http://www.baidu.com" frameborder="0" width="1000" height="500"></iframe>
+    <!-- 
+        同源  协议 ip port 
+        http://118.190.150.35:9000/login
+        http://118.190.150.35:9000/index
+
+        不同源
+        https://118.190.150.35:9000/index
+        http://118.190.150.35:8888/index
+        http://118.190.150.36:9000/index 
+    -->
+    <div></div>
+    <input type="input" id="username" name="username">
+    <input type="input" id="password" name="password">
+    <input type="button" id="btn">
+</body>
+<script>
+    // $("#username").change(function(){
+    //     console.log($(this).val())
+    // })
+    // $("#btn").click(function(){
+
+    //     $.ajax({
+    //         url:"",
+    //         data:{'username':"",'password':""},
+    //         success:function(){
+                
+    //         }
+    //     })
+    // })
+
+
+    // jsonp
+    // function getInfo(data){
+    //     console.log(data)
+    // }
+
+    // $("#btn").click(function(){
+    //     $("head").append("<script src='https://www.toutiao.com/stream/widget/local_weather/city/?callback=getInfo'><\/script>")
+    // })
+
+    // $.ajax({
+    //     url:"https://www.toutiao.com/stream/widget/local_weather/data/",
+    //     dataType:"jsonp",
+    //     type:"get",
+    //     data:{
+    //         'city':'太原',
+    //     },
+    //     success:function(data){
+    //         console.log(data)
+    //     },
+    //     processData:true,
+    //     error:function(){
+
+    //     }
+    // })
+
+</script>
+</html>
