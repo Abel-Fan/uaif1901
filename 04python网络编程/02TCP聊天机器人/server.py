@@ -1,7 +1,8 @@
 import socket
 import requests,json
+import threading
 
-ip_port = ("127.0.0.1",8000)
+ip_port = ("192.168.32.101",8000)
 
 sk = socket.socket()
 sk.bind(ip_port)
@@ -12,6 +13,12 @@ print("accept")
 yuju = {
     'hello':"hi"
 }
+
+def main(conn):
+    while True:
+        data = conn.recv(1024).decode()
+        text = getInfo(data)
+        conn.send(text.encode())
 
 
 def getInfo(text):
@@ -35,10 +42,11 @@ def getInfo(text):
     res = json.loads(res.text)
     res2 = res['results'][0]['values']['text']
     return res2
-
-
-conn,addr = sk.accept()
+index = 0
 while True:
-    data = conn.recv(1024).decode()
-    text = getInfo(data)
-    conn.send(text.encode())
+    conn,addr = sk.accept()
+    index+=1
+    print(index)
+    t = threading.Thread(target=main,args=(conn,))
+    t.start()
+
