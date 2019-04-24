@@ -16,5 +16,4 @@ print("accept...")
 conn,addr = sk.accept()   # 响应请求,返回 (conn,addr)  (连接,地址)
 print("接收内容...")
 data = conn.recv(1024).decode()  # 接收内容
-print(data)
 sk.close()

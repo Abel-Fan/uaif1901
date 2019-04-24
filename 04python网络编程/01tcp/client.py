@@ -10,4 +10,3 @@ except:
     print("服务器端未开启...")
 
 sk.send("hello world".encode())
-sk.close()
