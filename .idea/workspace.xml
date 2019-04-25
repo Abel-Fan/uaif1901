@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04python网络编程/03ftp/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/03ftp/client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04python网络编程/03ftp/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/03ftp/server.py" afterDir="false" />
     </list>
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="261">
+              <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="41">
+              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -88,8 +87,8 @@
         <option value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人/server.py" />
         <option value="$PROJECT_DIR$/04python网络编程/01tcp/client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/02回顾.py" />
-        <option value="$PROJECT_DIR$/04python网络编程/03ftp/server.py" />
         <option value="$PROJECT_DIR$/04python网络编程/03ftp/client.py" />
+        <option value="$PROJECT_DIR$/04python网络编程/03ftp/server.py" />
       </list>
     </option>
   </component>
@@ -342,7 +341,7 @@
       <workItem from="1556000038036" duration="4920000" />
       <workItem from="1556086148079" duration="10700000" />
       <workItem from="1556159034601" duration="5933000" />
-      <workItem from="1556171681008" duration="1866000" />
+      <workItem from="1556171681008" duration="4369000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -488,7 +487,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107626000" />
+    <option name="totallyTimeSpent" value="110129000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +507,7 @@
       <window_info content_ui="combo" id="Project" order="2" weight="0.1851253" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3676732" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6856128" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,7 +580,7 @@
     <SUITE FILE_PATH="coverage/uaif1901$day02.coverage" NAME="day02 Coverage Results" MODIFIED="1555384508723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$demo.coverage" NAME="demo Coverage Results" MODIFIED="1555557981979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/uaif1901$server.coverage" NAME="server Coverage Results" MODIFIED="1556090997243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/01tcp" />
-    <SUITE FILE_PATH="coverage/uaif1901$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1556173554196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
+    <SUITE FILE_PATH="coverage/uaif1901$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1556178649995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
     <SUITE FILE_PATH="coverage/uaif1901$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1556098100863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
   </component>
   <component name="editorHistoryManager">
@@ -861,22 +860,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/server.py">
+    <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="41">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/client.py">
+    <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="261">
+          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

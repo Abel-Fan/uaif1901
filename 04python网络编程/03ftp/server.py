@@ -25,15 +25,33 @@ def main(conn,addr):
             info = conn.recv(1024).decode()
             username,password = info.split()
             if username in users:
-
                 if users[username]['password']==password:
-                    text = "ok %s"%(random.randint(1000,9999))
+                    text = "ok %s %s"%(random.randint(1000,9999),users[username]['home'])
                     conn.send(text.encode())
+                    os.chdir(users[username]['home'])
+                    break
                 else:
                     conn.send("no 密码错误".encode())
             else:
                 conn.send("no 没有此用户".encode())
         # 执行命令
+        while True:
+            commend = conn.recv(1024).decode()
+            arr = commend.split()
+            if arr[0] in "ls dir list":
+                dirs = os.listdir(os.getcwd())
+                text = "\n".join(dirs)
+                conn.send(text.encode())
+            if arr[0]=='cd':
+                if os.path.isdir(arr[1]):
+                    os.chdir(os.getcwd()+"\\"+arr[1])
+                    text = os.getcwd()
+                    conn.send(text.encode())
+                elif arr[1] == "..":
+                    os.chdir("\\".join( os.getcwd().split("\\").pop() ))
+                    text = os.getcwd()
+                    conn.send(text.encode())
+
 
 
 

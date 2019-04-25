@@ -40,17 +40,27 @@ def login():
     sk.send(con.encode())
 
 while True:
+    homedir = ""
     # 如果cookie==0 登录 不等于0 跳过
     while cookie=="0":
         login()
         res = sk.recv(1024).decode() # 登录结果  "ok cookie"  "no message"
-        code,mes = res.split()
+        code,mes,home = res.split()
+        homedir = home
         if code == "ok":
             cookie = mes
-            print(cookie)
             break
         elif code == "no":
             print(mes)
 
-    print("登录成功")
+    # 执行命令
+    while True:
+        commend = input(homedir+">>>")
+        arr =  commend.split()
+        sk.send(commend.encode())
+        if arr[0] in "ls dir list":
+            text = sk.recv(1024).decode()
+            print(text)
+        elif arr[0] == "cd":
+            homedir = sk.recv(1024).decode()
 
