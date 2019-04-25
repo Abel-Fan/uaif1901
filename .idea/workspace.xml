@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/04python网络编程/03ftp/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/03ftp/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04python网络编程/03ftp/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/03ftp/server.py" afterDir="false" />
-    </list>
+    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+            <state relative-caret-position="302">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -341,7 +338,7 @@
       <workItem from="1556000038036" duration="4920000" />
       <workItem from="1556086148079" duration="10700000" />
       <workItem from="1556159034601" duration="5933000" />
-      <workItem from="1556171681008" duration="4369000" />
+      <workItem from="1556171681008" duration="4915000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -487,7 +484,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110129000" />
+    <option name="totallyTimeSpent" value="110675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -872,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="302">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
