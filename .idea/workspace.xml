@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="" />
+    <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/04python网络编程/04UDP/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04python网络编程/04UDP/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04python网络编程/05mysocketserver/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04python网络编程/05mysocketserver/mysocketserver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04python网络编程/03ftp/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/03ftp/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04python网络编程/03ftp/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/03ftp/server.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,25 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/server.py">
+        <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="338">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -74,7 +68,6 @@
         <option value="$PROJECT_DIR$/03python系统编程/day01.py" />
         <option value="$PROJECT_DIR$/03python系统编程/day02.py" />
         <option value="$PROJECT_DIR$/03python系统编程/day03.py" />
-        <option value="$PROJECT_DIR$/../demo.py" />
         <option value="$PROJECT_DIR$/03python系统编程/day04.py" />
         <option value="$PROJECT_DIR$/03python系统编程/day05.py" />
         <option value="$PROJECT_DIR$/js补充/index.js" />
@@ -84,14 +77,22 @@
         <option value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人/server.py" />
         <option value="$PROJECT_DIR$/04python网络编程/01tcp/client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/02回顾.py" />
+        <option value="$PROJECT_DIR$/../demo.py" />
+        <option value="$PROJECT_DIR$/../demo2.py" />
+        <option value="$PROJECT_DIR$/04python网络编程/03ftp/1client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/03ftp/client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/03ftp/server.py" />
+        <option value="$PROJECT_DIR$/04python网络编程/04UDP/server.py" />
+        <option value="$PROJECT_DIR$/04python网络编程/04UDP/client.py" />
+        <option value="$PROJECT_DIR$/04python网络编程/05mysocketserver/client.py" />
+        <option value="$PROJECT_DIR$/04python网络编程/05mysocketserver/mysocketserver.py" />
+        <option value="$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="381" />
-    <option name="y" value="111" />
+    <option name="x" value="330" />
+    <option name="y" value="114" />
     <option name="width" value="1512" />
     <option name="height" value="870" />
   </component>
@@ -145,7 +146,7 @@
               <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
               <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
               <item name="04python网络编程" type="462c0819:PsiDirectoryNode" />
-              <item name="03ftp" type="462c0819:PsiDirectoryNode" />
+              <item name="06web服务器" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,6 +160,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/yangd/Desktop/demo.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tutorial-env/Scripts" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -185,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server (2)">
+  <component name="RunManager" selected="Python.mywebserver">
     <configuration name="client (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,34 +196,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/05mysocketserver" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="client (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="aa" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/03ftp" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/03ftp/client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/05mysocketserver/client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,12 +218,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/01tcp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/04UDP" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/01tcp/client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/04UDP/client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,7 +232,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mysocketserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aa" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -260,12 +240,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/05mysocketserver" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人/server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/05mysocketserver/mysocketserver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,7 +254,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mywebserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aa" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -282,12 +262,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/03ftp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/06web服务器" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/03ftp/server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/04UDP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/04UDP/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -297,19 +299,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.server" />
       <item itemvalue="Python.client" />
-      <item itemvalue="Python.server (1)" />
+      <item itemvalue="Python.mysocketserver" />
       <item itemvalue="Python.client (1)" />
-      <item itemvalue="Python.server (2)" />
-      <item itemvalue="Python.client (2)" />
+      <item itemvalue="Python.mywebserver" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.server (2)" />
-        <item itemvalue="Python.client (2)" />
-        <item itemvalue="Python.server (1)" />
+        <item itemvalue="Python.mywebserver" />
+        <item itemvalue="Python.mysocketserver" />
         <item itemvalue="Python.client (1)" />
         <item itemvalue="Python.client" />
+        <item itemvalue="Python.server" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +340,8 @@
       <workItem from="1556000038036" duration="4920000" />
       <workItem from="1556086148079" duration="10700000" />
       <workItem from="1556159034601" duration="5933000" />
-      <workItem from="1556171681008" duration="4915000" />
+      <workItem from="1556171681008" duration="11511000" />
+      <workItem from="1556241206808" duration="6262000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -484,7 +487,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110675000" />
+    <option name="totallyTimeSpent" value="123533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,7 +507,7 @@
       <window_info content_ui="combo" id="Project" order="2" weight="0.1851253" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6856128" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8046181" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -567,53 +570,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="22" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/uaif1901$day04.coverage" NAME="day04 Coverage Results" MODIFIED="1555506646807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$day05.coverage" NAME="day05 Coverage Results" MODIFIED="1556002242923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
-    <SUITE FILE_PATH="coverage/uaif1901$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1555300411424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
-    <SUITE FILE_PATH="coverage/uaif1901$client.coverage" NAME="client Coverage Results" MODIFIED="1556091001274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/01tcp" />
     <SUITE FILE_PATH="coverage/uaif1901$client__2_.coverage" NAME="client (2) Coverage Results" MODIFIED="1556163130922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
-    <SUITE FILE_PATH="coverage/uaif1901$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1556098965058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
     <SUITE FILE_PATH="coverage/uaif1901$day03.coverage" NAME="day03 Coverage Results" MODIFIED="1555465083811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
+    <SUITE FILE_PATH="coverage/uaif1901$demo.coverage" NAME="demo Coverage Results" MODIFIED="1556180963157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/uaif1901$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1556184217534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
+    <SUITE FILE_PATH="coverage/uaif1901$server.coverage" NAME="server Coverage Results" MODIFIED="1556185260479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/04UDP" />
+    <SUITE FILE_PATH="coverage/uaif1901$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1556180984037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/uaif1901$day04.coverage" NAME="day04 Coverage Results" MODIFIED="1555506646807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
+    <SUITE FILE_PATH="coverage/uaif1901$mywebserver.coverage" NAME="mywebserver Coverage Results" MODIFIED="1556247858144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/06web服务器" />
+    <SUITE FILE_PATH="coverage/uaif1901$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1555300411424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
+    <SUITE FILE_PATH="coverage/uaif1901$client.coverage" NAME="client Coverage Results" MODIFIED="1556242772268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/04UDP" />
+    <SUITE FILE_PATH="coverage/uaif1901$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1556098965058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
+    <SUITE FILE_PATH="coverage/uaif1901$mysocketserver.coverage" NAME="mysocketserver Coverage Results" MODIFIED="1556245017004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/05mysocketserver" />
     <SUITE FILE_PATH="coverage/uaif1901$day02.coverage" NAME="day02 Coverage Results" MODIFIED="1555384508723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
-    <SUITE FILE_PATH="coverage/uaif1901$demo.coverage" NAME="demo Coverage Results" MODIFIED="1555557981979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/uaif1901$server.coverage" NAME="server Coverage Results" MODIFIED="1556090997243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/01tcp" />
-    <SUITE FILE_PATH="coverage/uaif1901$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1556178649995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
-    <SUITE FILE_PATH="coverage/uaif1901$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1556098100863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
+    <SUITE FILE_PATH="coverage/uaif1901$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1556242859164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/05mysocketserver" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02python爬虫/img/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/img/3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/img/4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/img/6.jpg" />
-    <entry file="file://$PROJECT_DIR$/02python爬虫/img/11.jpg" />
-    <entry file="file://$PROJECT_DIR$/02python爬虫/songs/飞云之下.m4a" />
-    <entry file="file://$PROJECT_DIR$/02python爬虫/songs/飞云之下.mp3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/day05.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02python爬虫/IPS.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -739,13 +712,6 @@
     <entry file="file://$PROJECT_DIR$/01python基础/mymodules/son/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
-          <caret line="733" column="11" selection-start-line="733" selection-start-column="10" selection-end-line="733" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03python系统编程/day02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -790,7 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../demo.py" />
     <entry file="file://$PROJECT_DIR$/03python系统编程/day03.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -857,23 +822,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/client.py">
+    <entry file="file://$PROJECT_DIR$/../工作/课件/人工智能课程/PPT课件/2018python课件/python第五季：全集课件资料/ftpServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        <state relative-caret-position="-493">
+          <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../demo2.py" />
+    <entry file="file://$PROJECT_DIR$/../demo.py" />
+    <entry file="file://$PROJECT_DIR$/../工作/课件/人工智能课程/PPT课件/2018python课件/python第五季：全集课件资料/ftpClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2610">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/1client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1795">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="942">
+          <caret line="864" selection-start-line="864" selection-end-line="864" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="293">
+          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/03ftp/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/04UDP/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/04UDP/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/05mysocketserver/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/05mysocketserver/mysocketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

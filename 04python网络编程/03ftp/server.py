@@ -51,6 +51,16 @@ def main(conn,addr):
                     os.chdir("\\".join( os.getcwd().split("\\").pop() ))
                     text = os.getcwd()
                     conn.send(text.encode())
+            if arr[0]=="get":
+                if os.path.isfile(arr[1]) and len(arr)>1:
+                    text = "ok " + str(os.path.getsize(arr[1]))
+                    conn.send(text.encode())
+                    with open(arr[1],"rb") as f:
+                        con = f.read()
+                    conn.send(con)
+
+                else:
+                    conn.send("no 没有此文件")
 
 
 
@@ -59,7 +69,7 @@ def main(conn,addr):
 
 
 
-ip_port = ("127.0.0.1",8000)
+ip_port = ("192.168.32.101",8000)
 
 sk = socket.socket()
 sk.bind(ip_port)
