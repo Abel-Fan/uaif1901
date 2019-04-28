@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/04python网络编程/06web服务器/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04python网络编程/06web服务器/templates/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04python网络编程/06web服务器/static/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04python网络编程/03ftp/img/aa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/06web服务器/static/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04python网络编程/06web服务器/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/04python网络编程/06web服务器/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,37 +20,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py">
+        <entry file="file://$PROJECT_DIR$/05flaskWeb框架/01flask_demo/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="191">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/templates/show.html">
+        <entry file="file://$PROJECT_DIR$/05flaskWeb框架/01flask_demo/templates/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="377">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/templates/list.html">
+        <entry file="file://$PROJECT_DIR$/05flaskWeb框架/01flask_demo/static/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="29">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -58,6 +56,8 @@
       <find>table</find>
       <find>tbody</find>
       <find>td</find>
+      <find>print</find>
+      <find>pr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -66,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python基础/day01.py" />
         <option value="$PROJECT_DIR$/python基础/day02.py" />
         <option value="$PROJECT_DIR$/python基础/day03.py" />
         <option value="$PROJECT_DIR$/python基础/day04.txt" />
@@ -109,10 +108,15 @@
         <option value="$PROJECT_DIR$/04python网络编程/04UDP/client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/05mysocketserver/client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/05mysocketserver/mysocketserver.py" />
-        <option value="$PROJECT_DIR$/04python网络编程/06web服务器/templates/index.html" />
         <option value="$PROJECT_DIR$/04python网络编程/06web服务器/templates/show.html" />
         <option value="$PROJECT_DIR$/04python网络编程/06web服务器/templates/list.html" />
+        <option value="$PROJECT_DIR$/04python网络编程/06web服务器/static/css/index.css" />
+        <option value="$PROJECT_DIR$/04python网络编程/06web服务器/templates/index.html" />
         <option value="$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py" />
+        <option value="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/templates/index.html" />
+        <option value="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/static/css/index.css" />
+        <option value="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/templates/index/index.html" />
+        <option value="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/main.py" />
       </list>
     </option>
   </component>
@@ -156,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,35 +171,27 @@
             <path>
               <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
               <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="04python网络编程" type="462c0819:PsiDirectoryNode" />
+              <item name="05flaskWeb框架" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
               <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="04python网络编程" type="462c0819:PsiDirectoryNode" />
-              <item name="06web服务器" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="04python网络编程" type="462c0819:PsiDirectoryNode" />
-              <item name="06web服务器" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="05flaskWeb框架" type="462c0819:PsiDirectoryNode" />
+              <item name="01flask_demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/yangd/Desktop/demo.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tutorial-env/Scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/04python网络编程/06web服务器/static/img" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -205,7 +202,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yangd\Desktop\uaif1901\05flaskWeb框架\01flask_demo\templates\index" />
+      <recent name="C:\Users\yangd\Desktop\uaif1901\04python网络编程\06web服务器\static" />
+      <recent name="C:\Users\yangd\Desktop\uaif1901\04python网络编程\06web服务器" />
+      <recent name="C:\Users\yangd\Desktop\uaif1901\04python网络编程\05mysocketserver" />
       <recent name="C:\Users\yangd\Desktop\uaif1901\04python网络编程" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yangd\Desktop\uaif1901\04python网络编程\06web服务器\static\img" />
+      <recent name="C:\Users\yangd\Desktop\uaif1901\04python网络编程\06web服务器\img" />
+      <recent name="C:\Users\yangd\Desktop\uaif1901\04python网络编程\03ftp\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -220,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mywebserver">
+  <component name="RunManager" selected="Python.main">
     <configuration name="client (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,6 +263,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/04UDP/client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05flaskWeb框架/01flask_demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -309,42 +337,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="aa" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/04UDP" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/04UDP/server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.server" />
       <item itemvalue="Python.client" />
       <item itemvalue="Python.mysocketserver" />
       <item itemvalue="Python.client (1)" />
       <item itemvalue="Python.mywebserver" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.mywebserver" />
         <item itemvalue="Python.mysocketserver" />
         <item itemvalue="Python.client (1)" />
         <item itemvalue="Python.client" />
-        <item itemvalue="Python.server" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +380,9 @@
       <workItem from="1556086148079" duration="10700000" />
       <workItem from="1556159034601" duration="5933000" />
       <workItem from="1556171681008" duration="11511000" />
-      <workItem from="1556241206808" duration="16043000" />
+      <workItem from="1556241206808" duration="25437000" />
+      <workItem from="1556275367372" duration="287000" />
+      <workItem from="1556412902788" duration="1260000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -520,7 +528,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133314000" />
+    <option name="totallyTimeSpent" value="144255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,10 +546,9 @@
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1851253" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4955595" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.61634105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,6 +559,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -611,8 +619,9 @@
     <SUITE FILE_PATH="coverage/uaif1901$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1556184217534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
     <SUITE FILE_PATH="coverage/uaif1901$server.coverage" NAME="server Coverage Results" MODIFIED="1556185260479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/04UDP" />
     <SUITE FILE_PATH="coverage/uaif1901$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1556180984037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/uaif1901$main.coverage" NAME="main Coverage Results" MODIFIED="1556414169036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05flaskWeb框架/01flask_demo" />
     <SUITE FILE_PATH="coverage/uaif1901$day04.coverage" NAME="day04 Coverage Results" MODIFIED="1555506646807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
-    <SUITE FILE_PATH="coverage/uaif1901$mywebserver.coverage" NAME="mywebserver Coverage Results" MODIFIED="1556264237675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/06web服务器" />
+    <SUITE FILE_PATH="coverage/uaif1901$mywebserver.coverage" NAME="mywebserver Coverage Results" MODIFIED="1556274369658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/06web服务器" />
     <SUITE FILE_PATH="coverage/uaif1901$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1555300411424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$client.coverage" NAME="client Coverage Results" MODIFIED="1556242772268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/04UDP" />
     <SUITE FILE_PATH="coverage/uaif1901$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1556098965058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
@@ -621,40 +630,6 @@
     <SUITE FILE_PATH="coverage/uaif1901$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1556242859164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/05mysocketserver" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02python爬虫/img.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45048">
-          <caret line="33" column="63643" selection-start-line="33" selection-start-column="63614" selection-end-line="33" selection-end-column="63643" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/img.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/day06.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/day07.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="65" column="59" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial-env/Scripts/activate">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02python爬虫/day09/douban/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/02python爬虫/day09.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -921,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/templates/show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -942,10 +910,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/img/aa.txt" />
+    <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/static/img/2.jpg" />
     <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="435">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04python网络编程/06web服务器/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05flaskWeb框架/01flask_demo/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05flaskWeb框架/01flask_demo/templates/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05flaskWeb框架/01flask_demo/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

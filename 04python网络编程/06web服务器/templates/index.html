@@ -6,8 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
     这是首页
+    <div class="box" style="width:200px;height:200px;border:1px solid red;"></div>
+    <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3207781657,3460758070&fm=26&gp=0.jpg" alt="">
+    <img src="static/img/1.png" alt="">
+
+    <ul>
+        <!--模板引擎-->
+        {% for item in data %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

@@ -1,5 +1,14 @@
 import socketserver,re
 
+def myjinja(html,data):
+    # 如果是for循环
+    html = html.decode()
+    arr = re.findall("\{% for (.*?) in (.*?) \%}(.*)",html)
+    str0 = re.findall("(.*\{\{.*?\}\}.*)",html)
+
+
+
+
 class Route:
     def __init__(self,request,request_dic):
         self.request = request
@@ -15,6 +24,14 @@ class Route:
             elif url =="/list":
                 self.return_render_template("list.html")
 
+
+        elif self.request_dic['url'].startswith("/static"):
+            filename = self.request_dic['url']
+            with open("./%s"%filename,"rb") as f:
+                content_text = f.read()
+                response_text = "HTTP/1.1 200 OK\r\n\r\n".encode()
+                self.request.sendall(response_text)
+                self.request.sendall(content_text)
         else:
             self.return_404_response()
 
@@ -22,6 +39,7 @@ class Route:
         with open("./templates/%s"%filename,"rb") as f:
             response_text = "HTTP/1.1 200 OK\r\n\r\n".encode()
             content_text = f.read()
+            myjinja(content_text,['北京','上海','山西'])
             self.request.sendall(response_text)
             self.request.sendall(content_text)
 
@@ -53,9 +71,7 @@ class myReqeustHandler(socketserver.BaseRequestHandler):
         }
         obj = { k:v  for k,v in [ item.split(": ") for item in header_info_arr if header_info_arr.index(item)>0 and item !=""]}
         self.request_dic.update(obj)
-        print(self.request_dic)
 
 
-
-server = socketserver.ThreadingTCPServer(("192.168.32.101",8000),myReqeustHandler)
+server = socketserver.ThreadingTCPServer(("127.0.0.1",8000),myReqeustHandler)
 server.serve_forever()
