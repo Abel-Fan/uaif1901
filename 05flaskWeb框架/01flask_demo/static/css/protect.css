@@ -7,17 +7,27 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-body{
-    background: url(../img/beijing01.jpg)no-repeat;
-    background-size: 100%;
-}
-.img-black{
-    display: block;
-    background-color: rgba(28,28,28,0.3);
-    height: 690px;
+
+.most-back{
     width: 100%;
-    z-index: 2;
+    height: 345px;
+    overflow: hidden;
     position: relative;
+}
+.back{
+    position: absolute;
+    left: 0;
+    top: -255px;
+    height: 1000px;
+    width: 100%;
+}
+.backs{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28,28,28,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .header{
     position: absolute;
@@ -32,7 +42,7 @@ body{
     height: 100%;
 }
 .nav-left{
-    width: 291px;
+    width: 191px;
     height: 100%;
     float: left;
 }
@@ -41,12 +51,12 @@ body{
     height: 29px;
     margin-top: 30px;
 }
-.img-box .img1{
+.img-box .imgg{
     width: 100%;
     height: 100%;
 }
 .nav-center{
-    width: 834px;
+    width: 934px;
     height: 100%;
     float: left;
     margin-left: 16px;
@@ -95,7 +105,7 @@ body{
     height: 1px;
     transition: all 0.6s cubic-bezier(0.215,0.61,0.355,1) 0s;
 }
-.nav-center .object:nth-child(1) .text i{
+.nav-center .object:nth-child(2) .text i{
     position: absolute;
     left: 0;
     top: 30px;
@@ -112,7 +122,7 @@ body{
     float: right;
 }
 .nav-right-box{
-    width: 180px;
+    width: 161px;
     height: 50px;
     margin-top: 20px;
     float: right;
@@ -137,7 +147,7 @@ body{
     top: 15px;
 }
 .nav-right-box .box{
-    /* width: 200px; */
+    width: 110px;
     height: 30px;
     position: absolute;
     left: 45px;
@@ -153,78 +163,7 @@ body{
     font-size: 20px;
     display: block;
 }
-.banner-box{
-    width: 934px;
-    height: 145px;
-    position: absolute;
-    left: 0;
-    top: 300px;
-    right: 0;
-    margin:0 auto;  
-}
-.banner{
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.banner .span3{
-    display: block;
-    margin-top: 10px;
-    font-size: 36px;
-}
-.banner .span4{
-    display: block;
-    margin-top: 10px;
-
-    font-size: 20px;
-}
-.img-bottom{
-    display: block;
-    width: 100%;
-    height: 248px;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 4;
-    overflow: hidden;
-}
-.img-bottom-box{
-    width: 1024px;
-    height: 183px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 45px;
-    overflow: hidden;
-}
-.fours-box{
-    width: 256px;
-    height: 153px;
-    margin-top: 30px;
-    float: left;
-    overflow: hidden;
-}
-.fours-img{
-    width: 90px;
-    height: 82px;
-    margin-left: 83px;
-}
-.fours-img .img3{
-    width: 100%;
-}
-.fours-text{
-    margin-top: 20px;
-    box-sizing: border-box;
-    color: #c2c2c2;
-    font-size: 13px;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    padding: 0 10px;
-}
-/* 平台开始 */
+/* 中间开始 */
 .platform-box{
     width: 1024px;
     height: 164px;
@@ -255,126 +194,22 @@ body{
     font-size: 18px;
     font-weight: normal;
 }
-.platform{
-    width: 1044px;
-    height: 400px;
-    margin: auto;
-    margin-bottom: 100px;
-}
-.platform-one{
-    width: 280px;
-    height: 390px;
-    float: left;
-    margin-right: 87px;
-    border: 5px solid #ffffff;
-    transition: all 0.5s ease 0s;
-    /* background-color: rgba(54,211,219,0.9); */
-    position: relative;
-}
-.platform-one img{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.platform-a:nth-child(3) .platform-one{
-    margin-right: 0;
-}
-.platform-one:hover{
-    border: 5px solid #eaeaea !important;
-}
-.platform-one-text{
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 250px;
-    position: relative;
-}
-
-/* 平台结束 */
-/* 功能开始 */
-.function-box{
+.phone-box{
     width: 100%;
+    height: 750px;
+    padding-top:20px; 
     background: #f2f2f2;
+    background-image: url(../img/q2.jpg);
 }
-.function{
-    width: 1024px;
-    height: 246px;
+.phone{
+    width: 766px;
+    height: 500px;
     margin: auto;
-    margin-bottom: 44px;
 }
-.function-one{
-    margin-right:8px;
-    border: 1px solid #dddddd;
-    width: 162px;
-    height: 244px;
-    float: left;
-    background: #ffffff;
-}
-.function-one:nth-child(6){
-    margin-right: 0;
-}
-.function-one:hover{
-    border: 1px solid #36d3db;
-}
-.function-top{
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    /* border:2px solid #36d3db; */
-    margin: auto;
-    margin-top: 30px;
-    text-align: center;
-}
-.function-top img{
+.php-img{
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
 }
-
-.function-one h3{
-    margin-top: 20px;
-    text-align: center;
-    font-weight: normal;
-    color: #000000;
-}
-.function-bottom{
-    /* width: 78px; */
-    /* height: 50px; */
-    margin: auto 10px;
-    margin-top: 10px;
-    /* line-height: 25px; */
-
-}
-.function-bottom p{
-    color: rgb(105, 105, 105);
-    font-size: 13px;
-    /* word-break:normal; */
-    /* white-space:pre-warp; */
-    /* word-wrapL:break-word; */
-}
-.go{
-    width: 176px;
-    height: 110px;
-    margin: auto;
-    margin-top: 30px;
-}
-.go-box{
-    width: 176px;
-    height: 44px;
-    background-color: rgb(54, 211, 219);
-    border: 1px solid rgb(54, 211, 219);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    line-height: 44px;
-    border-radius: 50px;
-}
-.go-box:hover{
-    background-color: rgb(242,242,242   );
-    border: 1px solid rgb(54, 211, 219);
-    color: rgb(54, 211, 219);
-}
-/* 功能结束 */
+/* 中间结束 */
 /* 产品开始 */
 .protect-box{
     width: 1024px;
@@ -552,147 +387,158 @@ body{
     border-radius: 2px;
     display: none;
 }
-/* 产品结束 */
-/* 完善开始 */
-.over-box{
-    width: 1024px;
-    height: 450px;
-    margin: auto;
-}
-.over{
-    width: 341px;
-    height: 110px;
-    float: left;
-    margin-bottom: 40px;
-}
-.over-boxi{
-    width: 53px;
-    height: 53px;
-    border-radius: 50%;
-    background: #36D3DB;
-    color: #fff;
-    text-align: center;
-    line-height: 53px;
-    float: left;
-}
-.over-boxi i{
-    font-size: 32px;
-}
-.over-right{
-    width: 220px;
-    margin-right: 30px;
-    height: 100%;
-    float: right;
-}
-.over-h3{
-    color: #494949;
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.over-span{
-    width: 100%;
-    letter-spacing: 1px;
-    font-size: 13px;
-    color: #888888;
-    line-height: 1.5em;
-    word-spacing: normal;
-    font-weight: normal;
-}
-/* 完善结束 */
-/* 我们开始 */
-.our-box{
-    width: 100%;
-    background: #f2f2f2;
-    height: 680px;
-    overflow: hidden;
-    margin-top: 30px;
-    padding-top: 50px;
-}
-.our-Box{
-    width: 1140px;
-    height: 230px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-.our{
-    width: 255px;
-    height: 100%;
-    margin: 0 15px;
-    float: left;
-    position: relative;
-    overflow: hidden;
-
-}
-.our-img{
-    width: 100%;
-    height: 191px;
-}
-.our-img .img4{
-    width: 100%;
-}
-.our-text{
-    width: 100%;
-    height: 39px;
-    text-align: center;
-    line-height: 39px;
-    color: #494949;
-    font-size: 16px;
-}
-.our-i{
-    width: 100%;
-    height: 191px;
-    position: absolute;
-    left: 0;
-    top: -120px;
-    transition: all 0.5s;
-    color: #494949;
-    text-align: center;
-    line-height: 191px;
-}
-.our-i i{
-    font-size: 32px;
-}
-.our:hover .our-img .img4{
-    opacity: 0.5;
-}
-.our:hover .our-i{
-    /* opacity: 1; */
-    position: absolute;
-    left: 0;
-    top: 0px;
-}
-.ourtext1{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 1.8;
-    font-size: 13px;
-    color: #808080;
-}
-.go2{
+.go1{
     width: 176px;
     height: 110px;
-    margin: auto;
-    margin-top: 30px;
+    margin-top: 60px;
 }
-.go2-box{
+.go-box{
     width: 176px;
     height: 44px;
-    border-color: rgb(51, 51, 51);
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(54, 211, 219);
+    border: 1px solid rgb(54, 211, 219);
     color: rgb(255, 255, 255);
     text-align: center;
     line-height: 44px;
     border-radius: 50px;
 }
-.go2-box:hover{
+.go-box:hover{
     background-color: rgb(242,242,242   );
-    border: 1px solid rgb(51, 51, 51);
-    color: rgb(51,51, 51);
+    border: 1px solid rgb(54, 211, 219);
+    color: rgb(54, 211, 219);
 }
-/* 我们结束 */
+
+/* 产品结束 */
+
+/*多个产品开始*/
+.more-products-box{
+    width: 1200px;
+    /*height: 500px;*/
+    /*background: beige;*/
+    margin: auto;
+}
+.more-products-header{
+    width: 100%;
+    height: 109px;
+    background: #f2f2f2;
+}
+.more-products-header ul li{
+    width: 120px;
+    height: 109px;
+    float: left;
+    font-size: 18px;
+    display: block;
+    line-height: 109px;
+    text-align: center;
+}
+.more-products-header ul li a{
+    color: #0b0b0b;
+}
+.more-products-header ul li:hover a{
+        color: #cc0000;
+}
+.more-products{
+    margin-top: 20px;
+    width: 100%;
+    height: 307px;
+    cursor: pointer;
+}
+.china-box{
+    width: 300px;
+    height: 307px;
+    float: left;
+}
+.china-box:hover .china-txt{
+    color: #e6002f;
+}
+.china-img{
+    width: 284px;
+    height: 204px;
+    border: 2px solid beige;
+    border-right:2px solid red;
+    border-bottom:2px solid red;
+}
+.china-imgg{
+    width: 284px;
+    height: 204px;
+    border: 2px solid beige;
+    border-left:2px solid red;
+    border-bottom:2px solid red;
+}
+.china-img-box{
+    width: 268px;
+    height: 188px;
+    margin: 8px;
+    background: yellow;
+}
+.china-img-box img{
+    width: 100%;
+}
+.china-txt{
+    font-size: 16px;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+}
+.china-txt1{
+    font-size: 12px;
+    color: #a2a2a2;
+    margin-bottom: 5px;
+    height: 17px;
+}
+.china-txt2{
+    font-size: 12px;
+    color: #000;
+}
+.china-txt2 span{
+    color: #e6002f;
+}
+/*多个产品结束*/
+.img-bottom{
+    display: block;
+    width: 100%;
+    height: 248px;
+    margin-top: 80px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 4;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+}
+.img-bottom-box{
+    width: 1024px;
+    height: 183px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    overflow: hidden;
+}
+.fours-box{
+    width: 256px;
+    height: 153px;
+    margin-top: 30px;
+    float: left;
+    overflow: hidden;
+}
+.fours-img{
+    width: 90px;
+    height: 82px;
+    margin-left: 83px;
+}
+.fours-img .img3{
+    width: 100%;
+}
+.fours-text{
+    margin-top: 20px;
+    box-sizing: border-box;
+    color: #A9A9A9;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    padding: 0 10px;
+}
 /* 最后开始 */
 .foot-box{
     width: 100%;
