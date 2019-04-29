@@ -1,12 +1,11 @@
-from flask import Flask,render_template,request
+from flask import Blueprint,abort,render_template
 
-app = Flask(__name__)
+index1 = Blueprint("index",__name__,url_prefix="/")
 
-
-@app.route("/<pagename>.html",methods=['GET'])
+@index1.route("/<pagename>.html",methods=["GET"])
 def index(pagename):
     data={}
-    if pagename=="index":
+    if pagename=="index" or pagename=='':
         data = {
             "tuijian":[
                 {'title': "汉服花莲", 'imgurl': "static/img/hanfu01.jpg", 'link':""},
@@ -36,11 +35,15 @@ def index(pagename):
                  },
             ]
         }
-    elif pagename == '':
+    elif pagename == 'protect':
         pass
+    elif pagename == 'find':
+        pass
+    elif pagename == "about":
+        pass
+    elif pagename == "contect":
+        pass
+    else:
+       abort(404)
+
     return render_template("index/%s.html"%pagename,data=data)
-
-
-
-if __name__ =="__main__":
-    app.run(debug=True,host="192.168.32.102",port='8000')
