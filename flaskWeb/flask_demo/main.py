@@ -1,10 +1,12 @@
 from flask import Flask
 from flaskWeb.flask_demo.blue_print.index import indexblue
 from flaskWeb.flask_demo.blue_print.admin import adminblue
+import os
 
 app = Flask(__name__)
 app.register_blueprint(indexblue)
 app.register_blueprint(adminblue)
+app.secret_key = os.urandom(24)
 
 if __name__ == "__main__":
     app.run(debug=True)
