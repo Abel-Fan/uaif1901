@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="static/index/css/index.css">
+    <link rel="stylesheet" href="{{ index_static }}css/index.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_929727_1k341qhfv5d.css">
-    <script src="static/index/js/js.js"></script>
-    <script src="static/index/js/animate.js"></script>
+    <script src="{{ index_static }}js/js.js"></script>
+    <script src="{{ index_static }}js/animate.js"></script>
     <title>国风创品</title>
 </head>
 
@@ -18,7 +18,7 @@
             <div class="nav-box">
                 <div class="nav-left">
                     <div class="img-box">
-                        <img src="static/img/4.png" alt="" class="img1">
+                        <img src="{{ index_static }}img/4.png" alt="" class="img1">
                     </div>
                 </div>
                 <div class="nav-center">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="nav-right">
                     <div class="nav-right-box">
-                        <div class="img-box2"><img src="static/img/5.png" alt="" class="img2"></div>
+                        <div class="img-box2"><img src="{{ index_static }}img/5.png" alt="" class="img2"></div>
                         <span class="line1">&nbsp;|</span>
                         <span class="box">
                             4
@@ -59,7 +59,7 @@
     <div class="img-bottom">
         <div class="img-bottom-box">
             <div class="fours-box">
-                <div class="fours-img"><img src="static/img/6.png" alt="" class="img3"></div>
+                <div class="fours-img"><img src="{{ index_static }}img/6.png" alt="" class="img3"></div>
                 <div class="fours-text">
                     <span class="fours-span">
                         窗纱外小鹿给我送枝花，沙发上下凡天使共我喝着茶。——黄伟文
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="fours-box">
-                <div class="fours-img"><img src="static/img/7.png" alt="" class="img3"></div>
+                <div class="fours-img"><img src="{{ index_static }}img/7.png" alt="" class="img3"></div>
                 <div class="fours-text">
                     <span class="fours-span">
                         “带着阳光味道的衬衫，日复一日的梦想。”——廖一梅
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="fours-box">
-                <div class="fours-img"><img src="static/img/8.png" alt="" class="img3"></div>
+                <div class="fours-img"><img src="{{ index_static }}img/8.png" alt="" class="img3"></div>
                 <div class="fours-text">
                     <span class="fours-span">
                         竹斋眠听雨，梦里长青苔。——《听雨》
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="fours-box">
-                <div class="fours-img"><img src="static/img/9.png" alt="" class="img3"></div>
+                <div class="fours-img"><img src="{{ index_static }}img/9.png" alt="" class="img3"></div>
                 <div class="fours-text">
                     <span class="fours-span">
                         今夜偏知春气暖，虫声新透绿窗纱。——刘方平
@@ -100,10 +100,10 @@
     </div>
     <div class="platform">
         {% for item in data.tuijian %}
-        <a href="static/" class="platform-a">
+        <a href="{{ index_static }}" class="platform-a">
             <div class="platform-one">
                 <div class="platform-one-text">{{ item[1] }}</div>
-                <img src="/static/index/{{ item[2] }}" alt="" width="100%" height="100%" >
+                <img src="{{ index_static }}{{item[2] }}" alt="" width="100%" height="100%" >
             </div>
         </a>
         {% endfor %}
@@ -129,7 +129,7 @@
             </div>
             {% endfor %}
         </div>
-        <a href="static/" class="go-a">
+        <a href="{{ index_static }}" class="go-a">
             <div class="go">
                 <div class="go-box">
                     立即体验产品
@@ -142,9 +142,9 @@
     <div class="protect-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="static/img/2.jpg" alt="" class="so" width="100%" height="100%"></div>
-                <div class="swiper-slide"><img src="static/img/3.jpg" alt="" class="so" width="100%" height="100%"></div>
-                <div class="swiper-slide"><img src="static/img/4.jpg" alt="" class="so" width="100%" height="100%"></div>
+                <div class="swiper-slide"><img src="{{ index_static }}img/2.jpg" alt="" class="so" width="100%" height="100%"></div>
+                <div class="swiper-slide"><img src="{{ index_static }}img/3.jpg" alt="" class="so" width="100%" height="100%"></div>
+                <div class="swiper-slide"><img src="{{ index_static }}img/4.jpg" alt="" class="so" width="100%" height="100%"></div>
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -160,9 +160,9 @@
             <span class="proctect-span-box2">
                 <span
                     class="proctect-span2">千峰云起，骤雨一霎儿价。更远树斜阳，风景怎生图画?青旗卖酒，山那畔别有人间，只消山水光中，无事过这一夏。如花美眷，似水流年，回得了过去，回不了当初。</span>
-                <a href="static/" class="more-a">>>更多</a>
+                <a href="{{ index_static }}" class="more-a">>>更多</a>
             </span>
-            <a href="static/" class="go-a">
+            <a href="{{ index_static }}" class="go-a">
                 <div class="go1">
                     <div class="go-box">
                         立即体验产品
@@ -183,9 +183,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">令人向往的美好充满仙气，整个身体都似有了灵性。纯色的魅力在于，见识过众多缤纷的色彩后，依然保持一颗总于自我的本心。同样是印花，鹊鸟印花显得知性，显得整个人都神采奕奕。纯正而浓郁的酒红色高贵优雅是衬托肤色的显白利器。</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -195,9 +195,9 @@
             </div>
             <div class="swiper-container1">
                 <div class="swiper-wrapper1">
-                    <div class="swiper-slide1"><img src="static/img/22.jpg" alt="" class="so" width="100%" height="100%"></div>
-                    <div class="swiper-slide1"><img src="static/img/24.jpg" alt="" class="so" width="100%" height="100%"></div>
-                    <div class="swiper-slide1"><img src="static/img/23.jpg" alt="" class="so" width="100%" height="100%"></div>
+                    <div class="swiper-slide1"><img src="{{ index_static }}img/22.jpg" alt="" class="so" width="100%" height="100%"></div>
+                    <div class="swiper-slide1"><img src="{{ index_static }}img/24.jpg" alt="" class="so" width="100%" height="100%"></div>
+                    <div class="swiper-slide1"><img src="{{ index_static }}img/23.jpg" alt="" class="so" width="100%" height="100%"></div>
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev1"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -212,10 +212,10 @@
     <div class="protect-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <img src="static/img/shou01.png" alt="" class="" width="100%" height="100%">
-                <!-- <div class="swiper-slide"><img src="static/img/2.jpg" alt="" class="so"></div>
-                <div class="swiper-slide"><img src="static/img/3.jpg" alt="" class="so"></div>
-                <div class="swiper-slide"><img src="static/img/4.jpg" alt="" class="so"></div> -->
+                <img src="{{ index_static }}img/shou01.png" alt="" class="" width="100%" height="100%">
+                <!-- <div class="swiper-slide"><img src="{{ index_static }}img/2.jpg" alt="" class="so"></div>
+                <div class="swiper-slide"><img src="{{ index_static }}img/3.jpg" alt="" class="so"></div>
+                <div class="swiper-slide"><img src="{{ index_static }}img/4.jpg" alt="" class="so"></div> -->
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -231,9 +231,9 @@
             <span class="proctect-span-box2">
                 <span
                     class="proctect-span2">　汉服，全称是“汉民族传统服饰”，又称汉衣冠、汉装、华服，是从黄帝即位到公元17世纪中叶(明末清初)，在汉族的主要居住区，以“华夏-汉”文化为背景和主导思想，以华夏礼仪文化为中心，通过自然演化而形成的具有独特汉民族风貌性格，明显区别于其他民族的传统服装和配饰体系。</span>
-                <a href="static/" class="more-a">>>更多</a>
+                <a href="{{ index_static }}" class="more-a">>>更多</a>
             </span>
-            <a href="static/" class="go-a">
+            <a href="{{ index_static }}" class="go-a">
                 <div class="go1">
                     <div class="go-box">
                         立即体验产品
@@ -254,9 +254,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">　“着我汉家衣，兴我华夏之邦”，汉服是中国的传统服饰，我们身为中国人，应该将其发扬广大，图为枣红色的改良的中国风汉服半身裙，肩上的莲花绣花，更显其秀丽大气的雅致之气，老少皆可穿。</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -266,11 +266,11 @@
             </div>
             <div class="swiper-container1">
                 <div class="swiper-wrapper1">
-                <img src="static/img/shou02.png" alt="" class="" width="100%" height="100%">
+                <img src="{{ index_static }}img/shou02.png" alt="" class="" width="100%" height="100%">
 
-                    <!-- <div class="swiper-slide1"><img src="static/img/24.jpg" alt="" class="so"></div>
-                    <div class="swiper-slide1"><img src="static/img/22.jpg" alt="" class="so"></div>
-                    <div class="swiper-slide1"><img src="static/img/23.jpg" alt="" class="so"></div> -->
+                    <!-- <div class="swiper-slide1"><img src="{{ index_static }}img/24.jpg" alt="" class="so"></div>
+                    <div class="swiper-slide1"><img src="{{ index_static }}img/22.jpg" alt="" class="so"></div>
+                    <div class="swiper-slide1"><img src="{{ index_static }}img/23.jpg" alt="" class="so"></div> -->
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev1"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -285,7 +285,7 @@
     <div class="protect-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                    <img src="static/img/shou05.png" alt="" class="" width="100%" height="100%">
+                    <img src="{{ index_static }}img/shou05.png" alt="" class="" width="100%" height="100%">
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -301,9 +301,9 @@
             <span class="proctect-span-box2">
                 <span
                     class="proctect-span2">千峰云起，骤雨一霎儿价。更远树斜阳，风景怎生图画?青旗卖酒，山那畔别有人间，只消山水光中，无事过这一夏。如花美眷，似水流年，回得了过去，回不了当初。</span>
-                <a href="static/" class="more-a">>>更多</a>
+                <a href="{{ index_static }}" class="more-a">>>更多</a>
             </span>
-            <a href="static/" class="go-a">
+            <a href="{{ index_static }}" class="go-a">
                 <div class="go1">
                     <div class="go-box">
                         立即体验产品
@@ -324,9 +324,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">月光华流动轻泻于地，挽迤三尺有余，使得步态愈加雍容柔美，三千青丝用发带束起，蝴蝶钗，一缕青丝垂在胸前，薄施粉黛。</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -336,7 +336,7 @@
             </div>
             <div class="swiper-container1">
                 <div class="swiper-wrapper1">
-                <img src="static/img/shou06.png" alt="" class="" width="100%" height="100%">
+                <img src="{{ index_static }}img/shou06.png" alt="" class="" width="100%" height="100%">
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev1"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -351,7 +351,7 @@
     <div class="protect-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                    <img src="static/img/shou07.png" alt="" class="" width="100%" height="100%">
+                    <img src="{{ index_static }}img/shou07.png" alt="" class="" width="100%" height="100%">
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -367,9 +367,9 @@
             <span class="proctect-span-box2">
                 <span
                     class="proctect-span2">大朵牡丹翠绿烟纱碧霞罗，逶迤拖地粉色水仙散花绿叶裙，身披金丝薄烟翠绿纱。低垂鬓发斜插镶嵌珍珠碧玉步摇，花容月貌出水芙蓉。</span>
-                <a href="static/" class="more-a">>>更多</a>
+                <a href="{{ index_static }}" class="more-a">>>更多</a>
             </span>
-            <a href="static/" class="go-a">
+            <a href="{{ index_static }}" class="go-a">
                 <div class="go1">
                     <div class="go-box">
                         立即体验产品
@@ -390,9 +390,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">身穿是淡白色宫装，淡雅处却多了几分出尘气质。宽大裙幅逶迤身后，优雅华贵。墨玉般的青丝，简单地绾个飞仙髻，几枚饱满圆润的珍珠随意点缀发间，让乌云般的秀发，更显柔亮润泽。</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -402,7 +402,7 @@
             </div>
             <div class="swiper-container1">
                 <div class="swiper-wrapper1">
-                <img src="static/img/shou08.png" alt="" class="" width="100%" height="100%">
+                <img src="{{ index_static }}img/shou08.png" alt="" class="" width="100%" height="100%">
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev1"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -417,7 +417,7 @@
     <div class="protect-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                    <img src="static/img/shou09.png" alt="" class="" width="100%" height="100%">
+                    <img src="{{ index_static }}img/shou09.png" alt="" class="" width="100%" height="100%">
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -433,9 +433,9 @@
             <span class="proctect-span-box2">
                 <span
                     class="proctect-span2">美眸顾盼间华彩流溢，红唇间漾着清淡浅笑。淡绿色的繁花宫装，外面披着一层金色薄纱，宽大的衣摆上锈着紫色的花纹，三千青丝撩了些许简单的挽了一下。</span>
-                <a href="static/" class="more-a">>>更多</a>
+                <a href="{{ index_static }}" class="more-a">>>更多</a>
             </span>
-            <a href="static/" class="go-a">
+            <a href="{{ index_static }}" class="go-a">
                 <div class="go1">
                     <div class="go-box">
                         立即体验产品
@@ -456,9 +456,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">　一片复古花片上蕴藏着诸多各不相同的宝藏，有白色珍珠，有立体造型的小花，有一朵贝壳雕刻小花，还有蓝色彩玉，她们在一起编织着美丽的装扮，诉说着岁月的故事。一款有含义的发夹，取一个优雅的名字‘淡泊如水’，犹如海水般清新动人，微风吹过淡泊如水。</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -468,7 +468,7 @@
             </div>
             <div class="swiper-container1">
                 <div class="swiper-wrapper1">
-                <img src="static/img/shou10.png" alt="" class="" width="100%" height="100%">
+                <img src="{{ index_static }}img/shou10.png" alt="" class="" width="100%" height="100%">
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev1"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -483,7 +483,7 @@
     <div class="protect-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                    <img src="static/img/shou11.png" alt="" class="" width="100%" height="100%">
+                    <img src="{{ index_static }}img/shou11.png" alt="" class="" width="100%" height="100%">
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -499,9 +499,9 @@
             <span class="proctect-span-box2">
                 <span
                     class="proctect-span2">“虹裳霞帔步摇冠，钿璎累累佩珊珊。”古时那些头戴凤冠身披霞帔的出阁女子，在人生最幸福的那一天可以装扮得如斯华丽：缨络垂旒，玉带蟒袍，下面百花裥裙，大红绣鞋，一抹浓艳满身喜庆，一如心中漫溢的幸福。</span>
-                <a href="static/" class="more-a">>>更多</a>
+                <a href="{{ index_static }}" class="more-a">>>更多</a>
             </span>
-            <a href="static/" class="go-a">
+            <a href="{{ index_static }}" class="go-a">
                 <div class="go1">
                     <div class="go-box">
                         立即体验产品
@@ -522,9 +522,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">魏晋南北朝时期的服饰，主要以自然洒脱、清秀空疏为特点。用巾帛包头，是这个时期的主要首服。汉族女子的发饰也颇具特点，主要是假髻的风行。魏晋时期妇女服装承袭秦汉的遗俗，在传统基础上有所改进，一般上身穿衫、袄、襦，下身穿裙子，款式多为上俭下丰，衣身部分紧身合体，袖口肥大，裙为多折裥裙，裙长曳地，下摆宽松，从而达到俊俏、潇洒的效果。</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -534,7 +534,7 @@
             </div>
             <div class="swiper-container1">
                 <div class="swiper-wrapper1">
-                <img src="static/img/shou12.png" alt="" class="" width="100%" height="100%">
+                <img src="{{ index_static }}img/shou12.png" alt="" class="" width="100%" height="100%">
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev1"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -549,7 +549,7 @@
     <div class="protect-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                    <img src="static/img/shou13.png" alt="" class="" width="100%" height="100%">
+                    <img src="{{ index_static }}img/shou13.png" alt="" class="" width="100%" height="100%">
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -565,9 +565,9 @@
             <span class="proctect-span-box2">
                 <span
                     class="proctect-span2">汉服全称是“汉民族传统服饰”，又称汉衣冠、汉装、华服，是从黄帝即位到公元17世纪中叶(明末清初)，在汉族的主要居住区，以华夏礼仪文化为中心，通过自然演化而形成的具有独特汉民族风貌性格，明显区别于其他民族的传统服装和配饰体系。</span>
-                <a href="static/" class="more-a">>>更多</a>
+                <a href="{{ index_static }}" class="more-a">>>更多</a>
             </span>
-            <a href="static/" class="go-a">
+            <a href="{{ index_static }}" class="go-a">
                 <div class="go1">
                     <div class="go-box">
                         立即体验产品
@@ -588,9 +588,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">唐代女服主要为裙、衫、帔。襦裙是唐代妇女的主要服式。在隋代及初唐时期，妇女的短襦都用小袖，下着紧身长裙，裙腰高系，一般都在腰部以上，有的甚至系在腋下，并以丝带系扎，给人一种俏丽修长的感觉。中唐时期的襦裙的比初唐的较宽阔一些，其它无太大变化。</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -600,7 +600,7 @@
             </div>
             <div class="swiper-container1">
                 <div class="swiper-wrapper1">
-                <img src="static/img/shou14.png" alt="" class="" width="100%" height="100%">
+                <img src="{{ index_static }}img/shou14.png" alt="" class="" width="100%" height="100%">
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev1"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -615,7 +615,7 @@
     <div class="protect-box">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                        <img src="static/img/shou15.png" alt="" class="" width="100%" height="100%">
+                        <img src="{{ index_static }}img/shou15.png" alt="" class="" width="100%" height="100%">
                 </div>
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev"> <i class="iconfont icon-weibiaoti6-copy"></i></div>
@@ -632,9 +632,9 @@
                 <span class="proctect-span-box2">
                     <span
                         class="proctect-span2">这款为汉元素对襟短款上襦，名为【南歌子】。一尺深红胜曲尘，天生旧物不如新。合欢桃核终堪恨，里许元来别有人。采用丝麻面料天然植物纤维运用先进的现代织造工艺制成，既具有传统棉或者麻类材质应有的透气性、吸湿性，在手感和抗皱性方面有更好的表现.</span>
-                    <a href="static/" class="more-a">>>更多</a>
+                    <a href="{{ index_static }}" class="more-a">>>更多</a>
                 </span>
-                <a href="static/" class="go-a">
+                <a href="{{ index_static }}" class="go-a">
                     <div class="go1">
                         <div class="go-box">
                             立即体验产品
@@ -725,22 +725,22 @@
         </div>
         <div class="our-Box">
             <div class="our">
-                <div class="our-img"><img src="static/img/our1.jpg" alt="" class="img4"></div>
+                <div class="our-img"><img src="{{ index_static }}img/our1.jpg" alt="" class="img4"></div>
                 <div class="our-text">七天无理由退货</div>
                 <div class="our-i"><i class="iconfont icon-suosou"></i></div>
             </div>
             <div class="our">
-                <div class="our-img"><img src="static/img/our2.jpg" alt="" class="img4"></div>
+                <div class="our-img"><img src="{{ index_static }}img/our2.jpg" alt="" class="img4"></div>
                 <div class="our-text">会员享受准时达</div>
                 <div class="our-i"><i class="iconfont icon-suosou"></i></div>
             </div>
             <div class="our">
-                <div class="our-img"><img src="static/img/our3.jpg" alt="" class="img4"></div>
+                <div class="our-img"><img src="{{ index_static }}img/our3.jpg" alt="" class="img4"></div>
                 <div class="our-text">正品保证</div>
                 <div class="our-i"><i class="iconfont icon-suosou"></i></div>
             </div>
             <div class="our">
-                <div class="our-img"><img src="static/img/our4.jpg" alt="" class="img4"></div>
+                <div class="our-img"><img src="{{ index_static }}img/our4.jpg" alt="" class="img4"></div>
                 <div class="our-text">消费者保障服务</div>
                 <div class="our-i"><i class="iconfont icon-suosou"></i></div>
             </div>
@@ -748,7 +748,7 @@
         <div class="ourtext1"><h2>温馨提示</h2></div>
         <div class="ourtext1">
                 国创优品提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过客服与店铺经营者沟通确认。国创优品存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向平台举报并提供有效线索。</div>
-        <a href="static/" class="go-a">
+        <a href="{{ index_static }}" class="go-a">
             <div class="go2">
                 <div class="go2-box">
                     立即体验产品
@@ -762,7 +762,7 @@
         <div class="foot">
             <div class="foot1">
                 <h5>关注我们</h5>
-                <div class="foot-img"><img src="static/img/f1.jpg" alt="" class="footimg"></div>
+                <div class="foot-img"><img src="{{ index_static }}img/f1.jpg" alt="" class="footimg"></div>
             </div>
             <div class="foot2">
                 <h5>联系我们</h5>
