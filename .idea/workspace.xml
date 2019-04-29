@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/dbcon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/templates/admin/addpj.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/templates/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/flask_demo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/flask_demo/blue_print/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/flask_demo/blue_print/admin_blue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/flask_demo/blue_print/index_blue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05flaskWeb框架/flask_demo/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/05flaskWeb框架/01flask_demo/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4.23js补充/weather" beforeDir="false" afterPath="$PROJECT_DIR$/4.23js补充/weather" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4.23js补充/weather/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/4.23js补充/weather/echarts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskWeb/flask_demo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="162">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -41,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
+            <state relative-caret-position="348">
               <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
@@ -58,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/db/connectdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="232">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -79,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+            <state relative-caret-position="1740">
+              <caret line="60" column="43" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -88,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21286">
+            <state relative-caret-position="22156">
               <caret line="764" column="66" selection-start-line="764" selection-start-column="66" selection-end-line="764" selection-end-column="66" />
               <folding>
                 <element signature="e#1657#1663#0" expanded="true" />
@@ -97,13 +86,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="319">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#308#350#0" />
+                <element signature="e#419#1314#0" />
               </folding>
             </state>
           </provider>
@@ -196,7 +187,6 @@
         <option value="$PROJECT_DIR$/05flaskWeb框架/flask_demo/main.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/index_blue.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin_blue.py" />
-        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/main.py" />
         <option value="$PROJECT_DIR$/flaskWeb/db/connectdb.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/db/connectdb.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/index.py" />
@@ -204,6 +194,7 @@
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/settings.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py" />
+        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/main.py" />
       </list>
     </option>
   </component>
@@ -264,28 +255,6 @@
               <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
               <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
               <item name="flask_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -494,7 +463,8 @@
       <workItem from="1556241206808" duration="25437000" />
       <workItem from="1556275367372" duration="287000" />
       <workItem from="1556412902788" duration="13748000" />
-      <workItem from="1556497973021" duration="8878000" />
+      <workItem from="1556497973021" duration="9309000" />
+      <workItem from="1556524190441" duration="1426000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -640,7 +610,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165621000" />
+    <option name="totallyTimeSpent" value="167478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -657,7 +627,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.18835893" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18835893" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.43872115" />
@@ -1040,22 +1010,9 @@
     <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/db/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
+        <state relative-caret-position="348">
           <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
@@ -1063,10 +1020,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/db/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/db/connectdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="232">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -1080,9 +1040,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="60" column="43" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21286">
+        <state relative-caret-position="22156">
           <caret line="764" column="66" selection-start-line="764" selection-start-column="66" selection-end-line="764" selection-end-column="66" />
           <folding>
             <element signature="e#1657#1663#0" expanded="true" />
@@ -1090,19 +1057,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html">
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        <state relative-caret-position="319">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#308#350#0" />
+            <element signature="e#419#1314#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py">
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="162">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
