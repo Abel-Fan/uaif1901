@@ -86,7 +86,7 @@ function del(id){
           <label>again：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" name="title" value="" data-validate="required:请输入标题" />
+          <input type="text" class="input w50" name="password1" value="" data-validate="required:请输入标题" />
           <div class="tips"></div>
         </div>
       </div>
@@ -105,53 +105,83 @@ function del(id){
           <label></label>
         </div>
         <div class="field">
-          <div class="button bg-main icon-check-square-o" onclick="submit()" style="cursor:pointer;"> 提交</div>
+          <div onclick="submit()" class="button bg-main icon-check-square-o" style="cursor:pointer;"> 提交</div>
         </div>
       </div>
     </form>
   </div>
 </div>
+
 <script>
     function submit(){
-        //验证
-        // 两次密码是否相同
-        // 是否值不为空
-        $.ajax({
-            'url':"",
-            'type':"post",
-            'dataType':'json',
-            'data':{username:$('[name=username]').val()
-                ,password:$("[name='password']").val(),
-                auth:$("[name='auth']").val()
-            },
-            'success':function(data){
-                if(data.code=='ok'){
-                    $(`
-                       <tr>
-      <td>
-          ${ $('.table tr').length + 1 }
-      </td>
-      <td> ${$('[name=username]').val()}</td>
-      <td>
+        let username = $("[name=username]").val();
+        let password = $("[name=password]").val();
+        let password1 = $("[name=password1]").val();
+        let auth = $("[name=auth]").val();
+        if(username =="" || password=='' || password1=="" || auth=="" || password!=password1){
+            return
+        }
 
-      </td>
-      <td>
-      <div class="button-group">
-      <a type="button" class="button border-main" href="#"><span class="icon-edit"></span>修改</a>
-       <a class="button border-red" href="javascript:void(0)" onclick="return del(17)"><span class="icon-trash-o"></span> 删除</a>
-      </div>
-      </td>
-    </tr>
-`).appendTo($(".table"));
-                    alert("添加成功")
+        $.ajax({
+            url:"/admin/adduser.html",
+            type:"post",
+            data:{'username':username,'password':password,'password1':password,'auth':auth},
+            dataType:"text",
+            success:function(data){   //  data  [ok|no]
+                // 分类 插入 非插入
+                if(data=="ok"){
+                    //插入成功，把数据添加到table
+                    $(`
+                         <tr>
+                            <td>${ $(".table tr").length }</td>
+                            <td>${ username }</td>
+                            <td>${ auth==0?"超级管理员":"普通管理员" }</td>
+                            <td>
+                                <div class="button-group">
+                                    <a type="button" class="button border-main" href="#">
+                                        <span class="icon-edit"></span>修改
+                                    </a>
+                                    <a class="button border-red" href="javascript:void(0)" onclick="return del(17)">
+                                        <span class="icon-trash-o"></span> 删除
+                                    </a>
+                                </div>
+
+                            </td>
+                        </tr>
+                    `).appendTo($(".table"))
+
+                     $("[name=username]").val("");
+                     $("[name=password]").val("");
+                     $("[name=password1]").val("");
+                     $("[name=auth]").val("");
+
                 }else{
-                    alert("添加失败")
+                    //提示失败
+                    alert("失败")
                 }
             }
-
         })
     }
 
 
+    $("[name=username]").on("change",function(){
+
+        let username = $(this).val();
+        if(username!==""){
+            $.ajax({
+                url:"/admin/authusername",
+                type:"post",
+                data:{username:username},
+                dataType:"json",
+                success:function(data){
+                    if(data.code=="error"){
+                        alert(data.info)
+                    }
+                }
+            })
+
+
+        }
+    })
 </script>
 </body></html>

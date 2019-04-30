@@ -60,22 +60,38 @@ def adduser():
         return render_template(
             "admin/adduser.html",
             admin_static=ADMIN_STATIC,
-            users=users
-                               )
+            users=users)
+
     elif request.method == "POST":
-        username = request.form.get("username",None)
-        password = request.form.get("password",None)
-        auth = request.form.get("auth",None)
-        # 做验证
+       password = request.form.get('password',None)
+       password1 = request.form.get('password1',None)
+       username = request.form.get('username',None)
+       auth = request.form.get('auth',None)
+       print(username,password,password1,auth)
+       if password==None or password1==None or username== None or auth ==None or password!=password1:
+           return "no"
+       else:
+           sql = "insert into users (username,password,auth,ctime) values (%s,%s,%s,%s)"
+           try:
+               cursor.execute(sql,(username,password,auth, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+               database.commit()
+           except:
+               return "no"
+           return "ok"
 
-        if username and password and auth:
-            sql = "insert into users (username,password,auth,ctime) values (%s,%s,%s,%s)"
-            ctime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            cursor.execute(sql,(username,password,auth,ctime))
-            res = database.commit()
+@adminblue.route("/authusername",methods=['POST'])
+@authlogin
+def authusername():
+    username = request.form.get("username",None)
+    if username:
+        sql = "select username from users where username=%s"
+        cursor.execute(sql,(username))
+        res = cursor.fetchall()
+        if len(res)>0:
+            return jsonify({'code':'error','info':"用户名已存在"})
+        else:
             return jsonify({'code':'ok'})
-
-        return jsonify({'code':'no'})
+    return jsonify({'code':'error','info':"参数不对应"})
 
 @adminblue.route("/addpj.html",methods=['GET','POST'])
 @authlogin
