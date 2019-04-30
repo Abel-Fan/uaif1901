@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template,session,request,redirect,jsonify
-import json
+import json,hashlib
 import datetime
 from flaskWeb.flask_demo.settings import ADMIN_STATIC
 from flaskWeb.flask_demo.db.connectdb import cursor,database
@@ -15,12 +15,15 @@ def login():
     elif request.method == "POST":
         username = request.form.get("username",None)
         password = request.form.get('password',None)
+
         if username and password:
             cursor.execute("select * from users where username=%s",username)
             res = cursor.fetchone()
             if res:
                 if res[2]== password:
                     session['username'] = username
+                    session['id'] = res[0]
+                    session['auth'] = res[3]
                     return json.dumps({'code':'ok','info':'登录成功'})
                 else:
                     return json.dumps({'code': 'error', 'info': '密码不正确'})
@@ -41,7 +44,23 @@ def login():
 @adminblue.route("/",methods=['GET'])
 @authlogin
 def admin():
-    return render_template("admin/index.html")
+    return render_template("admin/index.html",auth=session['auth'])
+
+@adminblue.route("/editusername",methods=['POST'])
+@authlogin
+def edituser():
+    username = request.form.get("username",None)
+    auth = request.form.get("auth",None)
+    idnum = request.form.get("id",None)
+    print(username,auth,idnum)
+    if username and auth and idnum:
+        sql = "update users set username=%s,auth=%s where id=%s"
+        cursor.execute(sql,(username,auth,idnum))
+        database.commit()
+        return "ok"
+    else:
+        return "no"
+
 
 
 @adminblue.route("/adduser.html",methods=['GET','POST'])
@@ -63,21 +82,25 @@ def adduser():
             users=users)
 
     elif request.method == "POST":
-       password = request.form.get('password',None)
-       password1 = request.form.get('password1',None)
-       username = request.form.get('username',None)
-       auth = request.form.get('auth',None)
-       print(username,password,password1,auth)
-       if password==None or password1==None or username== None or auth ==None or password!=password1:
-           return "no"
-       else:
-           sql = "insert into users (username,password,auth,ctime) values (%s,%s,%s,%s)"
-           try:
-               cursor.execute(sql,(username,password,auth, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-               database.commit()
-           except:
+       auth = session.get('auth',None)
+       if auth == 0:
+           password = request.form.get('password',None)
+           password1 = request.form.get('password1',None)
+           username = request.form.get('username',None)
+           auth = request.form.get('auth',None)
+           print(username,password,password1,auth)
+           if password==None or password1==None or username== None or auth ==None or password!=password1:
                return "no"
-           return "ok"
+           else:
+               sql = "insert into users (username,password,auth,ctime) values (%s,%s,%s,%s)"
+               try:
+                   cursor.execute(sql,(username,password,auth, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+                   database.commit()
+               except:
+                   return "no"
+               return "ok"
+
+       return "no"
 
 @adminblue.route("/authusername",methods=['POST'])
 @authlogin
@@ -92,6 +115,24 @@ def authusername():
         else:
             return jsonify({'code':'ok'})
     return jsonify({'code':'error','info':"参数不对应"})
+
+
+@adminblue.route("/deluser",methods=['POST'])
+@authlogin
+def deluser():
+    auth =  session.get("auth",None)
+    if auth == 0:
+        userid = request.form.get("id",None)
+        if userid:
+            sql = "delete from users where id=%s"
+            try:
+                cursor.execute(sql,(userid,))
+                database.commit()
+                return "ok"
+            except:
+                return "no"
+        return "no"
+    return "no"
 
 @adminblue.route("/addpj.html",methods=['GET','POST'])
 @authlogin

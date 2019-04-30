@@ -25,12 +25,12 @@
       <th width="250">操作</th>
     </tr>
     {% for item in users %}
-    <tr>
+    <tr class="tr">
       <td>
           {{ loop.index }}
       </td>
       <td>{{ item[1] }}</td>
-      <td>
+      <td auth="{{ item[2] }}">
           {% if item[2]==0 %}
           超级管理员
           {% elif item[2]==1 %}
@@ -40,8 +40,8 @@
       </td>
       <td>
       <div class="button-group">
-      <a type="button" class="button border-main" href="#"><span class="icon-edit"></span>修改</a>
-       <a class="button border-red" href="javascript:void(0)" onclick="return del(17)"><span class="icon-trash-o"></span> 删除</a>
+      <a type="button" idnum = '{{ item[0] }}' class="edit button border-main" href="#"><span class="icon-edit"></span>修改</a>
+       <a class="button border-red del" idnum = '{{ item[0] }}' href="javascript:void(0)"><span class="icon-trash-o"></span> 删除</a>
       </div>
       </td>
     </tr>
@@ -51,11 +51,34 @@
   </table>
 </div>
 <script>
-function del(id){
-	if(confirm("您确定要删除吗?")){
-		
-	}
-}
+
+    $(".table").click(function(event){
+        if ($(event.target).hasClass("del")){
+            if (confirm("确定删除吗?")){
+                $.ajax({
+                    url:"/admin/deluser",
+                    type:"post",
+                    data:{id:$(event.target).attr('idnum')},
+                    success:function(data){
+                        if(data=="ok"){
+                            $(event.target).parents("tr").detach()
+                        }
+                    }
+                });
+
+            }
+        }
+        if ($(event.target).hasClass("edit")){
+            $(".editbox").show();
+            $(".editbox").attr("idnum",$(event.target).attr("idnum"))
+            $("[name=editusername]").val($(event.target).parents("tr").children("td").eq(1).text())
+            $("[name=editauth]").val($(event.target).parents("tr").children("td").eq(2).attr('auth') )
+
+
+        }
+    })
+
+
 </script>
 <div class="panel admin-panel margin-top">
   <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
@@ -183,5 +206,55 @@ function del(id){
 
         }
     })
+</script>
+<div class="editbox">
+    <label for="">username</label>
+    <input type="text" name="editusername">
+    <br>
+    <label for="">password</label>
+    <input type="text" name="editauth">
+    <br>
+    <input type="button" value="edit" class="editbtn">
+</div>
+<style>
+    .editbox{
+        width:300px;
+        height:100px;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        border:1px solid red;
+        background-color:#007fff;
+        z-index: 100;
+        display: none;
+    }
+</style>
+
+<script>
+    $(".editbtn").click(function(){
+        let username = $("[name=editusername]").val()
+        let auth = $("[name=editauth]").val()
+        let id = $(".editbox").attr("idnum");
+        console.log(username,auth,id)
+        if(username!="" && auth!="" && id!=""){
+            $.ajax({
+                url:"editusername",
+                type:'post',
+                data:{username:username,auth:auth,id:id},
+                success:function(data){
+                    if(data=="ok"){
+                        alert("ok")
+                    }else{
+                        alert("no")
+                    }
+                }
+            })
+        }
+
+    })
+
 </script>
 </body></html>
