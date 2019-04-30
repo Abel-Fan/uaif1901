@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f3d8f7-75ad-4852-8c90-71bd7fd70013" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/uli/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/uli/myuli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/time_datetime.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4.23js补充/weather" beforeDir="false" afterPath="$PROJECT_DIR$/4.23js补充/weather" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4.23js补充/weather/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/4.23js补充/weather/echarts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskWeb/flask_demo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html" afterDir="false" />
     </list>
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="87">
+              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -48,37 +46,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="63">
+              <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding>
-                <element signature="e#0#68#0" expanded="true" />
+                <element signature="e#0#76#0" expanded="true" />
+                <element signature="e#327#1273#0" />
+                <element signature="e#1395#1437#0" />
+                <element signature="e#1783#1807#0" />
+                <element signature="e#1905#1965#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/uli/myuli.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/uli/myuli.py">
+        <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="351">
+              <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="319">
+              <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -127,8 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/04python网络编程/01tcp/server.py" />
-        <option value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人/client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人/server.py" />
         <option value="$PROJECT_DIR$/04python网络编程/01tcp/client.py" />
         <option value="$PROJECT_DIR$/04python网络编程/02回顾.py" />
@@ -172,12 +185,14 @@
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/index.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/index/index.html" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/settings.py" />
-        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/main.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/uli/__init__.py" />
-        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/index.html" />
-        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py" />
         <option value="$PROJECT_DIR$/flaskWeb/flask_demo/uli/myuli.py" />
+        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/index.html" />
+        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html" />
+        <option value="$PROJECT_DIR$/time_datetime.py" />
+        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py" />
+        <option value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html" />
       </list>
     </option>
   </component>
@@ -228,32 +243,6 @@
               <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
               <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uaif1901" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uaif1901" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -264,6 +253,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/yangd/Desktop/demo.py" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -393,7 +383,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mywebserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="time_datetime" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aa" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -401,12 +391,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04python网络编程/06web服务器" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04python网络编程/06web服务器/mywebserver.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/time_datetime.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -416,19 +406,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.mywebserver" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.main (1)" />
       <item itemvalue="Python.main (2)" />
       <item itemvalue="Python.main (3)" />
+      <item itemvalue="Python.time_datetime" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (3)" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.time_datetime" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.mywebserver" />
       </list>
     </recent_temporary>
   </component>
@@ -463,7 +453,7 @@
       <workItem from="1556412902788" duration="13748000" />
       <workItem from="1556497973021" duration="9309000" />
       <workItem from="1556524190441" duration="2714000" />
-      <workItem from="1556527829475" duration="3797000" />
+      <workItem from="1556527829475" duration="16019000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1553847511777</created>
@@ -609,7 +599,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172563000" />
+    <option name="totallyTimeSpent" value="184785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -626,10 +616,10 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19159256" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.19159256" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61101246" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5666075" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -702,6 +692,7 @@
     <SUITE FILE_PATH="coverage/uaif1901$client__2_.coverage" NAME="client (2) Coverage Results" MODIFIED="1556163130922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
     <SUITE FILE_PATH="coverage/uaif1901$day03.coverage" NAME="day03 Coverage Results" MODIFIED="1555465083811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1556501374273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05flaskWeb框架/flask_demo" />
+    <SUITE FILE_PATH="coverage/uaif1901$time_datetime.coverage" NAME="time_datetime Coverage Results" MODIFIED="1556595418597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/uaif1901$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1556501149926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05flaskWeb框架/02flask_demo" />
     <SUITE FILE_PATH="coverage/uaif1901$demo.coverage" NAME="demo Coverage Results" MODIFIED="1556180963157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/uaif1901$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1556184217534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/03ftp" />
@@ -710,7 +701,7 @@
     <SUITE FILE_PATH="coverage/uaif1901$main.coverage" NAME="main Coverage Results" MODIFIED="1556445160211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05flaskWeb框架/01flask_demo" />
     <SUITE FILE_PATH="coverage/uaif1901$day04.coverage" NAME="day04 Coverage Results" MODIFIED="1555506646807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$mywebserver.coverage" NAME="mywebserver Coverage Results" MODIFIED="1556274369658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/06web服务器" />
-    <SUITE FILE_PATH="coverage/uaif1901$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1556533100741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flaskWeb/flask_demo" />
+    <SUITE FILE_PATH="coverage/uaif1901$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1556595432089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flaskWeb/flask_demo" />
     <SUITE FILE_PATH="coverage/uaif1901$day01.coverage" NAME="day01 Coverage Results" MODIFIED="1555300411424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03python系统编程" />
     <SUITE FILE_PATH="coverage/uaif1901$client.coverage" NAME="client Coverage Results" MODIFIED="1556242772268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/04UDP" />
     <SUITE FILE_PATH="coverage/uaif1901$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1556098965058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/02TCP聊天机器人" />
@@ -719,33 +710,6 @@
     <SUITE FILE_PATH="coverage/uaif1901$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1556242859164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04python网络编程/05mysocketserver" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/04python网络编程/02TCP聊天机器人/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04python网络编程/02回顾.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
-          <folding>
-            <element signature="e#45#223#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04python网络编程/01tcp/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../工作/课件/人工智能课程/PPT课件/2018python课件/python第五季：全集课件资料/ftpServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-493">
@@ -1028,25 +992,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1798">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/uli/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/uli/myuli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/addpj.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1058,32 +1033,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/index.html">
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="58">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/time_datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/blue_print/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="63">
+          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding>
-            <element signature="e#0#68#0" expanded="true" />
+            <element signature="e#0#76#0" expanded="true" />
+            <element signature="e#327#1273#0" />
+            <element signature="e#1395#1437#0" />
+            <element signature="e#1783#1807#0" />
+            <element signature="e#1905#1965#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/uli/myuli.py">
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="87">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskWeb/flask_demo/templates/admin/adduser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

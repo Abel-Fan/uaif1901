@@ -1,5 +1,6 @@
-from flask import Blueprint,render_template,session,request,redirect
+from flask import Blueprint,render_template,session,request,redirect,jsonify
 import json
+import datetime
 from flaskWeb.flask_demo.settings import ADMIN_STATIC
 from flaskWeb.flask_demo.db.connectdb import cursor,database
 from flaskWeb.flask_demo.uli.myuli import authlogin
@@ -47,6 +48,43 @@ def admin():
 @authlogin
 def adduser():
     if request.method == "GET":
-        return render_template("admin/adduser.html")
+        sql = "select id,username,auth from users"
+        cursor.execute(sql)
+        users = cursor.fetchall()
+        print(users)
+        """
+        (
+            (1,horns,auth),
+        )
+        """
+        return render_template(
+            "admin/adduser.html",
+            admin_static=ADMIN_STATIC,
+            users=users
+                               )
     elif request.method == "POST":
-        return render_template("admin/adduser.html")
+        username = request.form.get("username",None)
+        password = request.form.get("password",None)
+        auth = request.form.get("auth",None)
+        # 做验证
+
+        if username and password and auth:
+            sql = "insert into users (username,password,auth,ctime) values (%s,%s,%s,%s)"
+            ctime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            cursor.execute(sql,(username,password,auth,ctime))
+            res = database.commit()
+            return jsonify({'code':'ok'})
+
+        return jsonify({'code':'no'})
+
+@adminblue.route("/addpj.html",methods=['GET','POST'])
+@authlogin
+def addpj():
+    return render_template("/admin/addpj.html")
+
+@adminblue.route("/loginout",methods=['GET'])
+@authlogin
+def loginout():
+    session.pop('username',None)
+    # 重定向
+    return redirect("login")

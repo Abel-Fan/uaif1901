@@ -1,62 +1,157 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="renderer" content="webkit">
-<title></title>
-<link rel="stylesheet" href="/static/admin/css/pintuer.css">
-<link rel="stylesheet" href="/static/admin/css/admin.css">
-<script src="/static/admin/js/jquery.js"></script>
-<script src="/static/admin/js/pintuer.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>网站信息</title>  
+    <link rel="stylesheet" href="{{ admin_static }}css/pintuer.css">
+    <link rel="stylesheet" href="{{ admin_static }}css/admin.css">
+    <script src="{{ admin_static }}js/jquery.js"></script>
+    <script src="{{ admin_static }}js/pintuer.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
+  <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong></div>
+  <div class="padding border-bottom">  
+  <a class="button border-yellow" href=""><span class="icon-plus-square-o"></span> 添加内容</a>
+  </div> 
+  <table class="table table-hover text-center">
+    <tr>
+      <th width="5%">ID</th>     
+      <th>栏目名称</th>  
+      <th>排序</th>     
+      <th width="250">操作</th>
+    </tr>
+    {% for item in users %}
+    <tr>
+      <td>
+          {{ loop.index }}
+      </td>
+      <td>{{ item[1] }}</td>
+      <td>
+          {% if item[2]==0 %}
+          超级管理员
+          {% elif item[2]==1 %}
+          普通管理员
+          {% endif %}
+
+      </td>
+      <td>
+      <div class="button-group">
+      <a type="button" class="button border-main" href="#"><span class="icon-edit"></span>修改</a>
+       <a class="button border-red" href="javascript:void(0)" onclick="return del(17)"><span class="icon-trash-o"></span> 删除</a>
+      </div>
+      </td>
+    </tr>
+      {% endfor %}
+
+    
+  </table>
+</div>
+<script>
+function del(id){
+	if(confirm("您确定要删除吗?")){
+		
+	}
+}
+</script>
+<div class="panel admin-panel margin-top">
   <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="">
+    <form method="post" class="form-x" action="">   
+      <input type="hidden" name="id"  value="" />  
       <div class="form-group">
         <div class="label">
-          <label>标题：</label>
+          <label>Username：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" value="" name="name" data-validate="required:请输入标题" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>图片：</label>
-        </div>
-        <div class="field">
-          <input type="text" id="url1" name="img" class="input tips" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
-          <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
-          <div class="tipss">图片尺寸：500*500</div>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-        <div class="label">
-          <label>描述：</label>
-        </div>
-        <div class="field">
-          <textarea class="input" name="info" style=" height:90px;"></textarea>
+          <input type="text" class="input w50" name="username" value="" data-validate="required:请输入标题" />
           <div class="tips"></div>
         </div>
       </div>
 
+        <div class="form-group">
+        <div class="label">
+          <label>Password：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="password" value="" data-validate="required:请输入标题" />
+          <div class="tips"></div>
+        </div>
+      </div>
+         <div class="form-group">
+        <div class="label">
+          <label>again：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="title" value="" data-validate="required:请输入标题" />
+          <div class="tips"></div>
+        </div>
+      </div>
+
       <div class="form-group">
+        <div class="label">
+          <label>auth：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="auth" value="0"  data-validate="required:,number:排序必须为数字" />
+          <div class="tips"></div>
+        </div>
+      </div>
+     <div class="form-group">
         <div class="label">
           <label></label>
         </div>
         <div class="field">
-          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+          <div class="button bg-main icon-check-square-o" onclick="submit()" style="cursor:pointer;"> 提交</div>
         </div>
       </div>
     </form>
   </div>
 </div>
+<script>
+    function submit(){
+        //验证
+        // 两次密码是否相同
+        // 是否值不为空
+        $.ajax({
+            'url':"",
+            'type':"post",
+            'dataType':'json',
+            'data':{username:$('[name=username]').val()
+                ,password:$("[name='password']").val(),
+                auth:$("[name='auth']").val()
+            },
+            'success':function(data){
+                if(data.code=='ok'){
+                    $(`
+                       <tr>
+      <td>
+          ${ $('.table tr').length + 1 }
+      </td>
+      <td> ${$('[name=username]').val()}</td>
+      <td>
 
+      </td>
+      <td>
+      <div class="button-group">
+      <a type="button" class="button border-main" href="#"><span class="icon-edit"></span>修改</a>
+       <a class="button border-red" href="javascript:void(0)" onclick="return del(17)"><span class="icon-trash-o"></span> 删除</a>
+      </div>
+      </td>
+    </tr>
+`).appendTo($(".table"));
+                    alert("添加成功")
+                }else{
+                    alert("添加失败")
+                }
+            }
+
+        })
+    }
+
+
+</script>
 </body></html>
